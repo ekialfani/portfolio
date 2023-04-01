@@ -5,7 +5,7 @@ import Content from './components/Content';
 
 function App() {
   return (
-    <div>
+    <div className="grid grid-cols-[250px_1fr] h-screen overflow-hidden">
       <Navbar />
       <Content />
     </div>
