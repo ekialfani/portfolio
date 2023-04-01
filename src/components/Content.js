@@ -2,7 +2,7 @@ import AppRoute from "../routes/AppRouter";
 
 function Content() {
   return (
-    <main>
+    <main className="px-14 py-10 flex items-center">
       <AppRoute />
     </main>
   );
