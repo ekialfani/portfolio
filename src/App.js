@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Trainings from './pages/Trainings';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <About />
       <Trainings />
       <Skills />
+      <Projects />
     </div>
   );
 }
