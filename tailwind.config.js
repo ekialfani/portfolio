@@ -10,6 +10,9 @@ module.exports = {
         'custom-grullo': '#A4907C',
         'custom-almond': '#F1DEC9',
       },
+      fontSize: {
+        'custom-xs': '0.7em',
+      }
     },
   },
   plugins: [],
