@@ -1,20 +1,21 @@
 function About() {
   return (
-    <div>
+    <div
+      className="h-full flex flex-col justify-center">
       <h1 
         className="text-8xl capitalize font-bold text-custom-shadow">
         eki alfani
       </h1>
       <h2
-        className="text-4xl capitalize font-semibold text-slate-700 mt-2 mb-6">
+        className="text-4xl capitalize font-semibold text-slate-700 mt-2 mb-8 ml-1">
         front-end web developer
       </h2>
       <p 
-        className="text-slate-500 mb-6">
+        className="text-slate-500 mb-8 max-w-3xl leading-relaxed">
         Hi, my name is Eki Alfani, and I am a computer science student. I am very interested and enthusiastic about learning and developing my skills in web technology, particularly in Front-End development with ReactJS. I have completed several online training programs in Front-End development and have built several projects for practice.
       </p>
       <div 
-        className="flex gap-6">
+        className="flex gap-7">
         <a
           className="text-2xl text-custom-shadow"
           href="https://www.facebook.com/ekialfani"
