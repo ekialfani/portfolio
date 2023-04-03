@@ -12,6 +12,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.limit-sentences {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* ganti angka 3 sesuai dengan jumlah kalimat yang ingin ditampilkan */
+  -webkit-box-orient: vertical;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
