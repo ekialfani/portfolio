@@ -32,7 +32,7 @@ function About() {
         </a>
         <a
           className="text-2xl text-custom-shadow"
-          href="#null"
+          href="https://www.linkedin.com/in/eki-alfani-1a1122271"
           target="_blank"
           rel="noreferrer">
           <i class="bi bi-linkedin"></i>

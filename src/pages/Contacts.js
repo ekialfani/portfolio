@@ -48,7 +48,7 @@ function Contacts() {
         <li>
           <a
             className="inline-block flex items-center gap-5"
-            href="https://www.instagram.com/ekialfni/"
+            href="https://www.linkedin.com/in/eki-alfani-1a1122271"
             target="_blank"
             rel="noreferrer">
             <i className="bi bi-linkedin text-2xl text-custom-shadow"></i>
