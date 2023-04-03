@@ -1,7 +1,34 @@
 import profile from '../assets/images/profile.jpg';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
+function ShowDrawerButton(props) {
+  return (
+    <button onClick={props.onClick}>
+      <i class="bi bi-list"></i>
+    </button>
+  );
+}
+
+function HideDrawerButton(props) {
+  return (
+    <button onClick={props.onClick}>
+      <i class="bi bi-x"></i>
+    </button>
+  );
+}
 
 function Navbar() {
+  const [isToggleOn, setIsToggleOn] = useState(false);
+
+  let drawerButton;
+
+  if (isToggleOn) {
+    drawerButton = <HideDrawerButton onClick={() => setIsToggleOn(false)} />
+  } else {
+    drawerButton = <ShowDrawerButton onClick={() => setIsToggleOn(true)} />
+  }
+
   return (
     <nav 
       className="h-full bg-custom-shadow flex flex-col items-center justify-center">
@@ -39,6 +66,7 @@ function Navbar() {
           <Link to="/contacts">contacts</Link>
         </li>
       </ul>
+      {drawerButton}
     </nav>
   );
 }
