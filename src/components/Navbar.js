@@ -4,7 +4,9 @@ import { useState } from 'react';
 
 function ShowDrawerButton(props) {
   return (
-    <button onClick={props.onClick}>
+    <button
+      className="text-2xl absolute top-5 left-5 md:hidden"
+      onClick={props.onClick}>
       <i class="bi bi-list"></i>
     </button>
   );
@@ -12,7 +14,9 @@ function ShowDrawerButton(props) {
 
 function HideDrawerButton(props) {
   return (
-    <button onClick={props.onClick}>
+    <button
+      className="text-2xl absolute top-5 left-5 md:hidden" 
+      onClick={props.onClick}>
       <i class="bi bi-x"></i>
     </button>
   );
