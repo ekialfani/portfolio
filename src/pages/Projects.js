@@ -9,11 +9,11 @@ function Projects() {
   return (
     <div>
       <h2 
-        className="capitalize text-4xl font-bold mt-10 mb-10 text-custom-shadow text-center">
+        className="capitalize text-center text-2xl sm:text-3xl md:text-4xl 2xl:text-6xl font-bold mt-24 mb-6 md:mt-10 mb-10 md:mb-12 2xl:mb-14 2xl:mt-14 text-custom-shadow">
         projects
       </h2>
       <div
-        className="grid grid-cols-3 gap-8">
+        className="grid grid-cols-[minmax(180px,_260px)] sm:grid-cols-[repeat(2,_minmax(180px,_280px))] xl:grid-cols-[repeat(3,_minmax(200px,_300px))] justify-center gap-8">
         <div
           className="shadow-md rounded-sm relative overflow-hidden">
           <a
@@ -29,7 +29,7 @@ function Projects() {
           <div
             className="p-4 mb-10">
             <h4 
-              className="capitalize font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
+              className="capitalize text-sm sm:text-base font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
               <a 
                 href="https://ekialfani.github.io/lombok-profile/"
                 target="_blank"
@@ -38,24 +38,24 @@ function Projects() {
               </a>
             </h4>
             <p 
-              className="limit-sentences text-sm text-slate-500">
+              className="limit-sentences text-xs leading-5 sm:text-sm text-slate-500">
               Displays information about the Island of Lombok, ranging from history, geography, culture and some of the famous tourist attractions on the Island of Lombok.
             </p>
           </div>
           <div 
-            className="absolute left-0 w-full bottom-0 flex items-center justify-between px-4 py-2">
+            className="absolute left-0 w-full bottom-0 flex items-center justify-between px-4 py-2 gap-x-2 overflow-auto">
             <div
               className="flex gap-2 font-medium text-custom-shadow">
               <span 
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs uppercase">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs uppercase">
                 html
               </span>
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs uppercase">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs uppercase">
                 css
               </span>
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs capitalize">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs capitalize">
                 javaScript
               </span>
             </div>
@@ -83,28 +83,28 @@ function Projects() {
           </a>
           <div className="p-4 mb-10">
             <h4
-              className="capitalize font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
+              className="capitalize text-sm sm:text-base font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
               <a href="https://jovial-clafoutis-41cfc0.netlify.app/" target="_blank"
           rel="noreferrer">
                 resto
               </a>
             </h4>
-            <p className="limit-sentences text-sm text-slate-500">Resto is an application that allows users to search and find their best restaurants based on specific criteria such as location, type of food, rating, and more. With this application, users can view information about the restaurant such as menu, photos, and reviews from previous visitors.</p>
+            <p className="limit-sentences text-xs leading-5 sm:text-sm text-slate-500">Resto is an application that allows users to search and find their best restaurants based on specific criteria such as location, type of food, rating, and more. With this application, users can view information about the restaurant such as menu, photos, and reviews from previous visitors.</p>
           </div>
           <div 
-            className="absolute w-full bottom-0 flex items-center px-4 py-3 justify-between">
+            className="absolute w-full bottom-0 flex items-center px-4 py-3 justify-between gap-x-2 overflow-auto">
             <div 
               className="flex gap-2 font-medium text-custom-shadow">
               <span
-                className="text-custom-xs px-2 border border-custom-shadow rounded-full uppercase">
+                className="text-[0.62em] sm:text-custom-xs px-2 border border-custom-shadow rounded-full uppercase">
                   html
               </span>
               <span
-                className="text-custom-xs px-2 border border-custom-shadow rounded-full uppercase">
+                className="text-[0.62em] sm:text-custom-xs px-2 border border-custom-shadow rounded-full uppercase">
                 css
               </span>
               <span
-                className="text-custom-xs px-2 border border-custom-shadow rounded-full capitalize">
+                className="text-[0.62em] sm:text-custom-xs px-2 border border-custom-shadow rounded-full capitalize">
                 javaScript
               </span>
             </div>
@@ -132,30 +132,30 @@ function Projects() {
           </a>
           <div className="p-4 mb-10">
             <h4
-              className="capitalize font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
+              className="capitalize text-sm sm:text-base font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
               <a href="https://ekialfani.github.io/movie-info/" target="_blank" rel="noreferrer">
                 movie info
               </a>
             </h4>
             <p 
-              className="limit-sentences text-sm text-slate-500">
+              className="limit-sentences leading-5 text-xs  sm:text-sm text-slate-500">
               A web-app to find detailed information about movies. This website is built using TMDB (The Movie Database) API.
             </p>
           </div>
           <div
-            className="absolute w-full bottom-0 flex items-center px-4 py-3 justify-between">
+            className="absolute w-full bottom-0 flex items-center px-4 py-3 justify-between gap-x-2 overflow-auto">
             <div
               className="flex gap-2 font-medium text-custom-shadow">
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs uppercase">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs uppercase">
                 html
               </span>
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs uppercase">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs uppercase">
                 css
               </span>
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs capitalize">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs capitalize">
                 javaScript
               </span>
             </div>
@@ -184,30 +184,30 @@ function Projects() {
           <div
             className="p-4 mb-10">
             <h4
-              className="capitalize font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
+              className="capitalize text-sm sm:text-base font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
               <a href="https://ekialfani.github.io/rak-buku/" target="_blank" rel="noreferrer">
                 rak buku
               </a>
             </h4>
             <p
-              className="limit-sentences text-sm text-slate-500">
+              className="limit-sentences leading-5 text-xs sm:text-sm text-slate-500">
               Rak Buku is a web application to store reading books, we can add a new book and move books between shelves by marking them as "selesai dibaca (finished)" or "belum selesai (unfinished)". We can also remove the book from the bookshelf by pressing the "hapus buku (deleted book)" button and edit the book by pressing the edit icon.
             </p>
           </div>
           <div
-            className="absolute left-0 w-full bottom-0 flex items-center justify-between px-4 py-2">
+            className="absolute left-0 w-full bottom-0 flex items-center justify-between px-4 py-2 gap-x-2 overflow-auto">
             <div
               className="flex gap-2 font-medium text-custom-shadow">
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs uppercase">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs uppercase">
                 html
               </span>
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs uppercase">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs uppercase">
                 css
               </span>
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs capitalize">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs capitalize">
                 javaScript
               </span>
             </div>
@@ -236,7 +236,7 @@ function Projects() {
           <div
             className="p-4 mb-10">
             <h4
-              className="capitalize font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
+              className="capitalize text-sm sm:text-base font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
               <a
                 href="https://ekialfani.github.io/web-calculator/"
                 target="_blank"
@@ -245,24 +245,24 @@ function Projects() {
               </a>
             </h4>
             <p
-              className="limit-sentences text-sm text-slate-500">
+              className="limit-sentences leading-5 text-xs sm:text-sm text-slate-500">
               Web Calculator is a web-based application that allows us to perform simple arithmetic operations such as addition, subtraction, multiplication, and others. When we do the calculation process, the history will be saved automatically into web storage and will be displayed in tabular form.
             </p>
           </div>
           <div
-            className="absolute left-0 w-full bottom-0 flex items-center justify-between px-4 py-2">
+            className="absolute left-0 w-full bottom-0 flex items-center justify-between px-4 py-2 gap-x-2 overflow-auto">
             <div
               className="flex gap-2 font-medium text-custom-shadow">
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs uppercase">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs uppercase">
                 html
               </span>
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs uppercase">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs uppercase">
                 css
               </span>
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs capitalize">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs capitalize">
                 javaScript
               </span>
             </div>
@@ -291,7 +291,7 @@ function Projects() {
           <div
             className="p-4 mb-10">
             <h4
-              className="capitalize font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
+              className="capitalize text-sm sm:text-base font-semibold mb-2 text-slate-700 hover:text-custom-shadow active:text-slate-700">
               <a 
                 href="https://ekialfani.github.io/sport-store/"
                 target="_blank"
@@ -300,24 +300,24 @@ function Projects() {
               </a>
             </h4>
             <p 
-              className="limit-sentences text-sm text-slate-500">
+              className="limit-sentences leading-5 text-xs sm:text-sm text-slate-500">
               A simple marketplace website that displays items, prices, categories, and more.
             </p>
           </div>
           <div
-            className="absolute left-0 w-full bottom-0 flex items-center justify-between px-4 py-2">
+            className="absolute left-0 w-full bottom-0 flex items-center justify-between px-4 py-2 gap-x-2 overflow-auto">
             <div
               className="flex gap-2 font-medium text-custom-shadow">
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs uppercase">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs uppercase">
                 html
               </span>
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs capitalize">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs capitalize">
                 tailwind
               </span>
               <span
-                className="border border-custom-shadow px-2 rounded-full text-custom-xs capitalize">
+                className="border border-custom-shadow px-2 rounded-full text-[0.62em] sm:text-custom-xs capitalize">
                 javaScript
               </span>
             </div>
