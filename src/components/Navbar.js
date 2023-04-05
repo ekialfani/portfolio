@@ -1,5 +1,5 @@
 import profile from '../assets/images/profile.jpg';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
 function ShowDrawerButton(props) {
@@ -48,53 +48,61 @@ function Navbar() {
       </div>
       <ul 
         className={`bg-custom-shadow absolute w-full md:static flex flex-col items-start md:items-center mt-8 gap-3 capitalize text-md sm:text-lg 2xl:text-2xl 2xl:gap-6 2xl:mt-12 font-medium ${animation} md:animate-none z-40`}>
-        <li 
-          className="text-custom-almond hover:text-white active:text-custom-almond">
-          <Link 
-            to="/about" 
+        <li>
+          <NavLink 
+            exact
+            to="/about"
             onClick={() => setIsToggleOn(false)}>
-            about
-          </Link>
+            {({ isActive }) => (
+              isActive ? <span className="text-white">about</span> : <span className="text-custom-almond hover:text-white">about</span>
+            )}
+            
+          </NavLink>
         </li>
-        <li 
-          className="text-custom-almond hover:text-white active:text-custom-almond">
-          <Link 
+        <li>
+          <NavLink 
             to="/trainings"
             onClick={() => setIsToggleOn(false)}>
-            trainings
-          </Link>
+            {({ isActive }) => (
+              isActive ? <span className="text-white">trainings</span> : <span className="text-custom-almond hover:text-white">trainings</span>
+            )}
+          </NavLink>
         </li>
-        <li 
-          className="text-custom-almond hover:text-white active:text-custom-almond">
-          <Link 
+        <li>
+          <NavLink 
             to="/skills"
             onClick={() => setIsToggleOn(false)}>
-            skills
-          </Link>
+            {({ isActive }) => (
+              isActive ? <span className="text-white">skills</span> : <span className="text-custom-almond hover:text-white">skills</span>
+            )}
+          </NavLink>
         </li>
-        <li 
-          className="text-custom-almond hover:text-white active:text-custom-almond">
-          <Link 
+        <li>
+          <NavLink 
             to="/projects"
             onClick={() => setIsToggleOn(false)}>
-            projects
-          </Link>
+            {({ isActive }) => (
+              isActive ? <span className="text-white">projects</span> : <span className="text-custom-almond hover:text-white">projects</span>
+            )}
+          </NavLink>
         </li>
-        <li 
-          className="text-custom-almond hover:text-white active:text-custom-almond">
-          <Link 
+        <li>
+          <NavLink 
             to="/certifications"
             onClick={() => setIsToggleOn(false)}>
-            certifications
-          </Link>
+            {({ isActive }) => (
+              isActive ? <span className="text-white">certificates</span> : <span className="text-custom-almond hover:text-white">certificates</span>
+            )}
+          </NavLink>
         </li>
-        <li 
-          className="text-custom-almond hover:text-white active:text-custom-almond">
-          <Link 
+        <li>
+          <NavLink 
             to="/contacts"
             onClick={() => setIsToggleOn(false)}>
-            contacts
-          </Link>
+            {({ isActive }) => (
+              isActive ? <span className="text-white">contacts</span> : <span className="text-custom-almond hover:text-white">contacts</span>
+            )}
+          </NavLink>
         </li>
       </ul>
       {drawerButton}
