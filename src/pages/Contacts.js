@@ -66,7 +66,7 @@ function Contacts() {
             rel="noreferrer">
             <i className="bi bi-github text-xl md:text-2xl text-custom-shadow"></i>
             <span
-              className="underline text-sm md:text-xl text-slate-500">
+              className="underline text-sm md:text-base text-slate-500">
               ekialfani
             </span>
           </a>
