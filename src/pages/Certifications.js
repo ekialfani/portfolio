@@ -2,17 +2,17 @@ function Certifications() {
   return (
     <div className="h-full md:flex justify-center flex-col">
       <h2
-        className="capitalize text-2xl sm:text-3xl md:text-4xl 2xl:text-6xl font-bold mt-24 mb-4 md:mt-10 md:mb-5 2xl:mb-8 text-custom-shadow">
+        className="capitalize text-3xl md:text-4xl 2xl:text-6xl font-bold mt-24 mb-4 md:mt-10 md:mb-5 2xl:mb-8 text-custom-shadow">
         Certifications
       </h2>
       <ul>
-        <li className="relative mb-5">
+        <li className="mb-5">
           <h3
-            className="font-semibold text-sm md:text-base text-slate-700">
+            className="font-semibold text-base md:text-lg text-slate-700">
             Menjadi Front-End Web Developer Expert (IDCamp 2022)
           </h3>
           <h4
-            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-sm text-slate-700">
+            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-base text-slate-700">
             dicoding indonesia
           </h4>
           <p 
@@ -21,13 +21,13 @@ function Certifications() {
           </p>
         </li>
         <li
-          className="relative mb-5">
+          className="mb-5">
           <h3
-            className="font-semibold text-sm md:text-base text-slate-700">
+            className="font-semibold text-base md:text-lg text-slate-700">
             Belajar Fundamental Front-End Web Development (IDCamp 2022)
           </h3>
           <h4 
-            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-sm text-slate-700">
+            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-base text-slate-700">
             dicoding indonesia
           </h4>
           <p 
@@ -36,13 +36,13 @@ function Certifications() {
           </p>
         </li>
         <li
-          className="relative mb-5">
+          className="mb-5">
           <h3
-            className="font-semibold text-sm md:text-base text-slate-700">
+            className="font-semibold text-base md:text-lg text-slate-700">
             Belajar Membuat Front-End Web untuk Pemula (IDCamp 2022)
           </h3>
           <h4
-            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-sm text-slate-700">
+            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-base text-slate-700">
             dicoding indonesia
           </h4>
           <p 
@@ -50,13 +50,13 @@ function Certifications() {
             credential ID: <a className="underline" href="https://www.dicoding.com/certificates/1OP852341PQK" target="_blank" rel="noreferrer">1OP852341PQK</a>
           </p>
         </li>
-        <li className="relative">
+        <li>
           <h3
-            className="font-semibold text-sm sm:text-sm md:text-base text-slate-700">
+            className="font-semibold text-base sm:text-sm md:text-lg text-slate-700">
             Belajar Dasar Pemrograman Web (IDCamp 2022)
           </h3>
           <h4 
-            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-sm text-slate-700">
+            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-base text-slate-700">
             dicoding indonesia
           </h4>
           <p 
