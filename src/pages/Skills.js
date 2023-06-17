@@ -3,7 +3,7 @@ function Skills() {
     <div 
       className="md:h-full md:flex md:flex-col md:justify-center">
       <h2 
-        className="capitalize text-2xl sm:text-3xl md:text-4xl 2xl:text-6xl font-bold mt-24 mb-4 md:mt-10 md:mb-5 2xl:mb-8 text-custom-shadow">
+        className="capitalize text-3xl md:text-4xl 2xl:text-6xl font-bold mt-24 mb-4 md:mt-10 md:mb-5 2xl:mb-8 text-custom-shadow">
         Skills
       </h2>
       <ul

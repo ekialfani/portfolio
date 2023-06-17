@@ -9,7 +9,7 @@ function Projects() {
   return (
     <div>
       <h2 
-        className="capitalize text-center text-2xl sm:text-3xl md:text-4xl 2xl:text-6xl font-bold mt-24 mb-6 md:mt-10 mb-10 md:mb-12 2xl:mb-14 2xl:mt-14 text-custom-shadow">
+        className="capitalize text-center text-3xl md:text-4xl 2xl:text-6xl font-bold mt-24 mb-6 md:mt-10 mb-10 md:mb-12 2xl:mb-14 2xl:mt-14 text-custom-shadow">
         projects
       </h2>
       <div
