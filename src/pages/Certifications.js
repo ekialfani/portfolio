@@ -6,77 +6,61 @@ function Certifications() {
         Certifications
       </h2>
       <ul>
-        <li className="relative mb-6">
+        <li className="relative mb-5">
           <h3
-            className="font-semibold text-xs sm:text-sm md:text-base w-3/4 text-slate-700">
-            Menjadi Front-End Web Developer Expert (IDCamp)
+            className="font-semibold text-sm md:text-base text-slate-700">
+            Menjadi Front-End Web Developer Expert (IDCamp 2022)
           </h3>
-          <span
-            className="text-[0.62em] md:text-custom-xs text-custom-shadow font-semibold absolute top-0 right-0 capitalize">
-            jan 27, 2023
-          </span>
           <h4
-            className="capitalize italic mb-3 text-xs mt-1 md:mt-0 sm:text-sm text-slate-700">
+            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-sm text-slate-700">
             dicoding indonesia
           </h4>
           <p 
-            className="text-[0.65em] sm:text-xs capitalize text-slate-500">
+            className="text-sm capitalize text-slate-500">
             credential ID: <a className="underline" href="https://www.dicoding.com/certificates/4EXGNEMKEZRL" target="_blank" rel="noreferrer">4EXGNEMKEZRL</a>
           </p>
         </li>
         <li
-          className="relative mb-6">
+          className="relative mb-5">
           <h3
-            className="font-semibold text-xs sm:text-md md:text-base w-3/4 text-slate-700">
-            Belajar Fundamental Front-End Web Development (IDCamp)
+            className="font-semibold text-sm md:text-base text-slate-700">
+            Belajar Fundamental Front-End Web Development (IDCamp 2022)
           </h3>
-          <span
-            className="text-[0.62em] md:text-custom-xs text-custom-shadow font-semibold absolute top-0 right-0 capitalize">
-            Nov 7, 2022
-          </span>
           <h4 
-            className="capitalize italic mb-3 text-xs mt-1 md:mt-0 sm:text-sm text-slate-700">
+            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-sm text-slate-700">
             dicoding indonesia
           </h4>
           <p 
-            className="text-[0.65em] sm:text-xs capitalize text-slate-500">
+            className="text-sm capitalize text-slate-500">
             credential ID: <a className="underline" href="https://www.dicoding.com/certificates/JLX1L9645X72" target="_blank" rel="noreferrer">JLX1L9645X72</a>
           </p>
         </li>
         <li
-          className="relative mb-6">
+          className="relative mb-5">
           <h3
-            className="font-semibold text-xs sm:text-sm md:text-base w-3/4 text-slate-700">
-            Belajar Membuat Front-End Web untuk Pemula (IDCamp)
+            className="font-semibold text-sm md:text-base text-slate-700">
+            Belajar Membuat Front-End Web untuk Pemula (IDCamp 2022)
           </h3>
-          <span
-            className="text-[0.62em] md:text-custom-xs text-custom-shadow font-semibold absolute top-0 right-0 capitalize">
-            Sep 1, 2022
-          </span>
           <h4
-            className="capitalize italic mb-3 text-xs mt-1 md:mt-0 sm:text-sm text-slate-700">
+            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-sm text-slate-700">
             dicoding indonesia
           </h4>
           <p 
-            className="text-[0.65em] sm:text-xs capitalize text-slate-500">
+            className="text-sm capitalize text-slate-500">
             credential ID: <a className="underline" href="https://www.dicoding.com/certificates/1OP852341PQK" target="_blank" rel="noreferrer">1OP852341PQK</a>
           </p>
         </li>
         <li className="relative">
           <h3
-            className="font-semibold text-xs sm:text-sm md:text-base w-3/4 text-slate-700">
-            Belajar Dasar Pemrograman Web (IDCamp)
+            className="font-semibold text-sm sm:text-sm md:text-base text-slate-700">
+            Belajar Dasar Pemrograman Web (IDCamp 2022)
           </h3>
-          <span
-            className="text-[0.62em] md:text-custom-xs text-custom-shadow font-semibold absolute top-0 right-0 capitalize">
-            Aug 11, 2022
-          </span>
           <h4 
-            className="capitalize italic mb-3 text-xs mt-1 md:mt-0 sm:text-sm text-slate-700">
+            className="capitalize italic mb-5 text-sm mt-1 md:mt-0 sm:text-sm text-slate-700">
             dicoding indonesia
           </h4>
           <p 
-            className="text-[0.65em] sm:text-xs capitalize text-slate-500">
+            className="text-sm capitalize text-slate-500">
             credential ID: <a className="underline" href="https://www.dicoding.com/certificates/1OP86M66QXQK" target="_blank" rel="noreferrer">1OP86M66QXQK</a>
           </p>
         </li>
