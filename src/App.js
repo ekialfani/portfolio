@@ -5,7 +5,7 @@ import Content from './components/Content';
 
 function App() {
   return (
-    <div className="grid md:grid-cols-[minmax(250px,22%)_1fr] h-screen overflow-hidden">
+    <div className="bg-slate-50 grid md:grid-cols-[minmax(200px,20%)_1fr] h-screen overflow-hidden">
       <Navbar />
       <Content />
     </div>
