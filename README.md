@@ -9,7 +9,7 @@
 
   <br />
   <br />
-  <a href="https://amazing-vacherin-e25854.netlify.app/" target="_blank" rel="noopener">
+  <a href="https://ekialfani.netlify.app/" target="_blank" rel="noopener">
     <button style="background-color: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer;">
       View Project
     </button>
