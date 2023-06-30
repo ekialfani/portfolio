@@ -81,7 +81,7 @@ function Trainings() {
           </h3>
           <span
             className="text-xs text-custom-shadow font-medium mb-2">
-            Aug 11, 2022 - Sep 4, 2022
+            Aug 10, 2022 - Sep 4, 2022
           </span>
         </div>
         <h4
@@ -112,7 +112,7 @@ function Trainings() {
           </h3>
           <span
             className="text-xs text-custom-shadow font-medium mb-2">
-            Aug 11, 2022 - Sep 4, 2022
+            May 27, 2022 - Aug 10, 2022
           </span>
         </div>
         <h4 
