@@ -10,7 +10,7 @@ export default function CardItem({ project }) {
         <img
           className="w-full h-full object-cover"
           src={project.img} 
-          alt="lombok profile" />
+          alt={project.title} />
       </a>
       <div
         className="p-4 mb-10">
