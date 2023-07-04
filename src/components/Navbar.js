@@ -1,4 +1,4 @@
-import profile from '../assets/images/profile.jpg';
+// import profile from '../assets/images/profile.jpg';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -43,7 +43,7 @@ function Navbar() {
         className="hidden md:inline-block bg-slate-500 w-32 h-32 2xl:w-48 2xl:h-48 rounded-full overflow-hidden border-4 border-custom-grullo">
         <img 
           className="w-full h-full"
-          src={profile}
+          src="./images/profile.jpg"
           alt="profile" />
       </div>
       <ul 
