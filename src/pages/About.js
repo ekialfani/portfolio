@@ -7,12 +7,12 @@ function About() {
         eki alfani
       </h1>
       <h2
-        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl capitalize font-semibold text-slate-700 mt-2 mb-5 md:mb-8 2xl:mb-12 ml-1">
-        front-end web developer
+        className="text-2xl md:text-4xl xl:text-5xl capitalize font-semibold text-slate-700 mt-2 mb-5 md:mb-8 2xl:mb-12 ml-1">
+        front-end developer
       </h2>
       <p 
-        className="text-sm lg:text-base xl:text-lg text-slate-500 mb-6 md:mb-8 2xl:mb-12 max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl leading-relaxed xl:leading-looser">
-        Hi, my name is Eki Alfani, and I am a computer science student. I am very interested and enthusiastic about learning and developing my skills in web technology, particularly in Front-End development with ReactJS. I have completed several online training programs in Front-End development and have built several projects for practice.
+        className="text-sm lg:text-base xl:text-lg text-slate-500 mb-6 md:mb-8 2xl:mb-12 max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl xl:leading-relaxed">
+        Hi, I'm Eki Alfani, a Front-End Developer with expertise in React and React Native. I have a strong command of HTML, CSS, and JavaScript, and I'm experienced in creating responsive and visually appealing web applications. My skills include implementing component-based architecture, managing application state, and integrating APIs using React and React Native. I'm passionate about continuous learning and staying updated with the latest trends in Front-End Development.
       </p>
       <div 
         className="flex gap-7 2xl:gap-10">

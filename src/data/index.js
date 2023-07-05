@@ -37,7 +37,7 @@ const projects = [
   },
   {
     id: 5,
-    img: "./images/resto.PNG",
+    img: "./images/resto.png",
     url: "https://jovial-clafoutis-41cfc0.netlify.app/",
     title: "resto",
     description: "Resto is an application that allows users to search and find their best restaurants based on specific criteria such as location, type of food, rating, and more. With this application, users can view information about the restaurant such as menu, photos, and reviews from previous visitors.",
@@ -46,7 +46,7 @@ const projects = [
   },
   {
     id: 6,
-    img: "./images/movie-info.PNG",
+    img: "./images/movie-info.png",
     url: "https://ekialfani.github.io/movie-info/",
     title: "movie info",
     description: "A web-app to find detailed information about movies. This website is built using TMDB (The Movie Database) API.",
@@ -55,7 +55,7 @@ const projects = [
   },
   {
     id: 7,
-    img: "./images/rak-buku.PNG",
+    img: "./images/rak-buku.png",
     url: "https://ekialfani.github.io/rak-buku/",
     title: "rak buku",
     description: 'Rak Buku is a web application to store reading books, we can add a new book and move books between shelves by marking them as "selesai dibaca (finished)" or "belum selesai (unfinished)". We can also remove the book from the bookshelf by pressing the "hapus buku (deleted book)" button and edit the book by pressing the edit icon.',
