@@ -91,7 +91,7 @@ function Navbar() {
             to="/certifications"
             onClick={() => setIsToggleOn(false)}>
             {({ isActive }) => (
-              isActive ? <span className="text-white">certificates</span> : <span className="text-custom-almond hover:text-white">certificates</span>
+              isActive ? <span className="text-white">certifications</span> : <span className="text-custom-almond hover:text-white">certifications</span>
             )}
           </NavLink>
         </li>
