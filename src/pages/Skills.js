@@ -48,6 +48,14 @@ function Skills() {
             ReactJS
           </span>
         </li>
+        <li
+          className="flex items-center gap-x-3 order-5">
+          <i class="bi bi-check-circle-fill text-custom-shadow"></i>
+          <span
+            className="font-bold text-slate-700">
+            React Native
+          </span>
+        </li>
       </ul>
     </div>
   );
