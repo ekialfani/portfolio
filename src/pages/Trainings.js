@@ -12,6 +12,52 @@ function Trainings() {
             className="flex items-center justify-between flex-wrap gap-x-5 gap-y-1">
             <h3 
               className="text-base md:text-lg capitalize font-semibold text-slate-700">
+              react & react native for front-end developer (studi independen)
+            </h3>
+            <span
+              className="text-xs text-custom-shadow font-medium mb-2">
+              Feb 16, 2023 - Jun 30, 2023
+            </span>
+          </div>
+        <h4
+          className="capitalize text-sm md:text-base italic text-slate-700 mb-1 mt-2">
+          hacktiv8 indonesia
+        </h4>
+        <ul
+          className="text-sm leading-relaxed md:text-base list-disc ml-3 md:ml-4 text-slate-500 md:max-w-3xl">
+          <li>
+            Learn the basics of HTML and CSS.
+          </li>
+          <li>
+            Learn Modern JavaScript (ES6) will serve as the overall foundation and fundamental prerequisite for React.
+          </li>
+          <li>
+            Learn Single Page Application (SPA) with React Router.
+          </li>
+          <li>
+            Learn state management with Redux.
+          </li>
+          <li>
+            Learn Redux Middleware & Async Thunk.
+          </li>
+          <li>
+            Learn the concept of Server-Side Rendering(SSR) with Next.js.
+          </li>
+          <li>
+            Learn automation testing and deploying a React App.
+          </li>
+          <li>
+            Learn the fundamentals of React Native, its functions and usage, as well as how to perform styling and layouting in React Native.
+          </li>
+        </ul>
+      </div>
+
+      <div
+        className="w-full mb-10">
+          <div 
+            className="flex items-center justify-between flex-wrap gap-x-5 gap-y-1">
+            <h3 
+              className="text-base md:text-lg capitalize font-semibold text-slate-700">
               menjadi front-end web developer expert (IDCamp)
             </h3>
             <span
