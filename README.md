@@ -1,6 +1,6 @@
 <h1 align="center">Portfolio</h1>
 <div align="center">
-  <img src="./src/assets/images/screenshoot.PNG" alt="screenshoot">
+  <img src="./public/images/screenshoot.png">
 
   <br />
   <br />
