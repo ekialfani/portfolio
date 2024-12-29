@@ -19,7 +19,6 @@ function Certifications() {
           <h3
             className="font-semibold text-base md:text-lg text-slate-700 hover:underline">
             <a href="https://sertiva.id/credential/d64faae3-1a65-4b43-a0b2-a5c4639e166d" target="_blank" rel="noreferrer">Styling Komponen React (Studi Independen)</a>
-            
           </h3>
         </li>
         <li className="mb-3 flex items-center gap-x-3">
