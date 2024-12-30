@@ -11,10 +11,7 @@ function Home() {
         Full-Stack Developer
       </h2>
       <p className="text-sm sm:text-base md:text-lg text-slate-500 sm:max-w-[500px] md:max-w-2xl pr-12">
-        Junior Full-Stack Developer skilled in React and Golang. Experienced in
-        building web and mobile applications with interactive interfaces and
-        efficient backends. Ready to contribute to the development of responsive
-        and functional applications.
+        Junior Full-Stack Developer with expertise in building applications using React and Golang. Experience in developing user-friendly web and mobile applications with interactive interfaces and scalable backends. Eager to contribute to creating responsive and functional application in collaborative team environment.
       </p>
       <a
         href="mailto:ekialfani15@gmail.com"
