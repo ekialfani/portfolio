@@ -33,7 +33,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="py-6 md:py-8 flex items-start md:items-center md:flex-row justify-between">
+    <nav className="w-[90%] sm:w-[80%] lg:w-[70%] xl:max-w-[1200px] mx-auto py-6 md:py-8 flex items-start md:items-center md:flex-row justify-between">
       <div>
         {drawerButton}
         <NavLink className="hidden md:flex items-center" to="/">

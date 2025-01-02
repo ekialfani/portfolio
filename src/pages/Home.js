@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="flex flex-col gap-y-5">
+    <div className="w-full h-[80vh] flex justify-center relative flex-col gap-y-5">
       <h1 className="text-[2.7rem] sm:text-6xl font-bold">
         <span className="block md:inline">Hi,</span> I'm{" "}
         <span className="text-[#4070F4]">Eki Alfani</span>

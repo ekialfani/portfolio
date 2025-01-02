@@ -1,10 +1,10 @@
 function Skills() {
   return (
-    <div className="">
+    <div className="w-full h-[80vh] flex flex-col justify-center relative">
       <h2 className="text-3xl font-semibold mb-4">
         My <span className="text-[#4070F4]">Skills</span>
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div className="w-max grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
         <ul className="flex flex-col gap-y-1">
           <h4 className="font-semibold">Languages</h4>
           <li className="text-slate-500 font-medium">HTML</li>

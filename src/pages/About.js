@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="md:h-full md:flex md:flex-col md:justify-center">
+    <div className="w-full relative h-full md:h-[80vh] flex flex-col md:justify-center">
       <div className="flex items-center flex-col md:flex-row gap-x-10 justify-between">
         <div className="order-1 md:order-2 w-[40%] flex items-center justify-start">
           <img className="w-[80%]" src="./images/profile.png" alt="profile" />
