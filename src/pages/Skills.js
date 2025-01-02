@@ -32,7 +32,7 @@ function Skills() {
           <li className="text-slate-500 font-medium">Postman</li>
         </ul>
       </div>
-      <div className="flex flex-col gap-8 absolute right-0 top-0 bottom-0 justify-center">
+      <div className="hidden md:flex flex-col gap-8 absolute right-0 top-0 bottom-0 justify-center">
         <a
           className="text-2xl lg:text-3xl text-[#374151] hover:text-[#4070F4]"
           href="https://www.facebook.com/ekialfani"
