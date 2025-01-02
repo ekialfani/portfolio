@@ -1,11 +1,24 @@
 // import profile from '../assets/images/profile.jpg';
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DrawerButton from "./buttons/DrawerButton";
 
 function Navbar() {
   const [isToggleOn, setIsToggleOn] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   let drawerButton;
   let animation;
@@ -33,7 +46,11 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-white w-[90%] sm:w-[80%] lg:w-[70%] xl:max-w-[1200px] mx-auto py-6 md:py-8 flex items-start md:items-center md:flex-row justify-between">
+    <nav
+      className={`sticky top-0 right-0 z-40 bg-white w-full px-[5%] sm:px-[10%] lg:w-[70%] lg:px-0 xl:max-w-[1200px] mx-auto py-6 md:py-8 flex items-start md:items-center md:flex-row justify-between ${
+        scrollY > 10 ? "border-b border-slate-200" : "border-none"
+      }`}
+    >
       <div>
         {drawerButton}
         <NavLink className="hidden md:flex items-center" to="/">
