@@ -6,7 +6,7 @@ function Projects() {
 
   return (
     <div className="w-full h-full py-14">
-      <h2 className="text-3xl mb-10 font-semibold text-center">
+      <h2 className="text-3xl mb-10 font-semibold text-center text-black dark:text-white">
         My <span className="text-[#4070F4]">Projects</span>
       </h2>
       <Cards

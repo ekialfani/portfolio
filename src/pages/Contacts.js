@@ -1,7 +1,9 @@
 function Contacts() {
   return (
     <div className="w-full md:h-full md:flex flex-col justify-center py-14">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-5">Contacts</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-5 text-black dark:text-white">
+        Contacts
+      </h2>
       <ul className="flex gap-y-6 flex-col">
         <li>
           <a
@@ -10,8 +12,8 @@ function Contacts() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="bi bi-envelope-at text-2xl md:text-3xl text-[#374151]"></i>
-            <span className="hover:underline text-sm md:text-base text-slate-500">
+            <i className="bi bi-envelope-at text-2xl md:text-3xl text-[#374151] dark:text-slate-400"></i>
+            <span className="hover:underline text-sm md:text-base text-slate-500 dark:text-slate-400">
               ekialfani15@gmail.com
             </span>
           </a>
@@ -23,8 +25,8 @@ function Contacts() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="bi bi-facebook text-2xl md:text-3xl text-[#374151]"></i>
-            <span className="hover:underline text-sm md:text-base capitalize text-slate-500">
+            <i className="bi bi-facebook text-2xl md:text-3xl text-[#374151] dark:text-slate-400"></i>
+            <span className="hover:underline text-sm md:text-base capitalize text-slate-500 dark:text-slate-400">
               eki alfani
             </span>
           </a>
@@ -36,8 +38,8 @@ function Contacts() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="bi bi-instagram text-2xl md:text-3xl text-[#374151]"></i>
-            <span className="hover:underline text-sm md:text-base text-slate-500">
+            <i className="bi bi-instagram text-2xl md:text-3xl text-[#374151] dark:text-slate-400"></i>
+            <span className="hover:underline text-sm md:text-base text-slate-500 dark:text-slate-400">
               @ekialfni
             </span>
           </a>
@@ -49,8 +51,8 @@ function Contacts() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="bi bi-linkedin text-2xl md:text-3xl text-[#374151]"></i>
-            <span className="hover:underline text-sm md:text-base text-slate-500 capitalize">
+            <i className="bi bi-linkedin text-2xl md:text-3xl text-[#374151] dark:text-slate-400"></i>
+            <span className="hover:underline text-sm md:text-base text-slate-500 dark:text-slate-400 capitalize">
               eki alfani
             </span>
           </a>
@@ -62,8 +64,8 @@ function Contacts() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="bi bi-github text-2xl md:text-3xl text-[#374151]"></i>
-            <span className="hover:underline text-sm md:text-base text-slate-500">
+            <i className="bi bi-github text-2xl md:text-3xl text-[#374151] dark:text-slate-400"></i>
+            <span className="hover:underline text-sm md:text-base text-slate-500 dark:text-slate-400">
               ekialfani
             </span>
           </a>

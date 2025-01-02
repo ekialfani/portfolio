@@ -45,20 +45,32 @@ function Navbar() {
     animation = "animate-drawer-hide";
   }
 
+  const htmlElement = document.getElementsByTagName("html")[0];
+
+  if (darkMode) {
+    htmlElement.classList.add("dark");
+  } else {
+    htmlElement.classList.remove("dark");
+  }
+
   return (
     <nav
-      className={`sticky top-0 right-0 z-40 bg-white w-full px-[5%] sm:px-[10%] lg:w-[70%] lg:px-0 xl:max-w-[1200px] mx-auto py-6 md:py-8 flex items-start md:items-center md:flex-row justify-between ${
-        scrollY > 10 ? "border-b border-slate-200" : "border-none"
+      className={`sticky top-0 right-0 z-40 bg-white dark:bg-slate-900 w-full px-[5%] sm:px-[10%] lg:w-[70%] lg:px-0 xl:max-w-[1200px] mx-auto py-6 md:py-8 flex items-start md:items-center md:flex-row justify-between ${
+        scrollY > 10
+          ? "border-b border-slate-200 dark:border-slate-700"
+          : "border-none"
       }`}
     >
       <div>
         {drawerButton}
         <NavLink className="hidden md:flex items-center" to="/">
-          <h1 className="text-xl font-semibold">Eki</h1>
+          <h1 className="text-xl font-semibold text-black dark:text-white">
+            Eki
+          </h1>
         </NavLink>
       </div>
       <ul
-        className={`absolute left-0 bg-[#4070F4] md:bg-white w-full md:w-max md:static flex flex-col items-start gap-8 capitalize text-md font-medium md:flex-row ${animation} md:animate-none z-40`}
+        className={`absolute left-0 bg-[#4070F4] md:bg-white md:dark:bg-slate-900 w-full md:w-max md:static flex flex-col items-start gap-8 capitalize text-md font-medium md:flex-row ${animation} md:animate-none z-40`}
       >
         <li className="sm:w-[83%] sm:mx-auto md:w-max md:mx-0 mt-10 md:mt-0">
           <NavLink exact to="/" onClick={() => setIsToggleOn(false)}>
@@ -66,7 +78,7 @@ function Navbar() {
               isActive ? (
                 <span className="md:text-[#4070F4] font-semibold">Home</span>
               ) : (
-                <span className="text-white md:text-[#374151] hover:text-[#4070F4] font-semibold">
+                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
                   Home
                 </span>
               )
@@ -79,7 +91,7 @@ function Navbar() {
               isActive ? (
                 <span className="md:text-[#4070F4] font-semibold">about</span>
               ) : (
-                <span className="text-white md:text-[#374151] hover:text-[#4070F4] font-semibold">
+                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
                   about
                 </span>
               )
@@ -92,7 +104,7 @@ function Navbar() {
               isActive ? (
                 <span className="md:text-[#4070F4] font-semibold">skills</span>
               ) : (
-                <span className="text-white md:text-[#374151] hover:text-[#4070F4] font-semibold">
+                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
                   skills
                 </span>
               )
@@ -107,7 +119,7 @@ function Navbar() {
                   projects
                 </span>
               ) : (
-                <span className="text-white md:text-[#374151] hover:text-[#4070F4] font-semibold">
+                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
                   projects
                 </span>
               )
@@ -122,7 +134,7 @@ function Navbar() {
                   certifications
                 </span>
               ) : (
-                <span className="text-white md:text-[#374151] hover:text-[#4070F4] font-semibold">
+                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
                   certifications
                 </span>
               )
@@ -137,7 +149,7 @@ function Navbar() {
                   contacts
                 </span>
               ) : (
-                <span className="text-white md:text-[#374151] hover:text-[#4070F4] font-semibold">
+                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
                   contacts
                 </span>
               )

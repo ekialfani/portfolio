@@ -5,12 +5,10 @@ import Content from "./components/Content";
 
 function App() {
   return (
-    // <div className="w-[90%] sm:w-[80%] lg:w-[70%] mx-auto">
-    <>
+    <div className="min-h-screen bg-white dark:bg-slate-900">
       <Navbar />
       <Content />
-    </>
-    // </div>
+    </div>
   );
 }
 

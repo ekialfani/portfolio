@@ -15,7 +15,7 @@ const projects = [
     url: "https://blipedia.netlify.app/",
     title: "blipedia",
     description:
-      "Blipedia is an e-commerce application that allows users to buy and sell their products online. It is one of the group-based final projects completed to fulfill the requirements of the React & React Native course at Hacktiv8.",
+      "Blipedia is an e-commerce app for buying and selling products online. It is a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "Reactjs"],
     repository: "https://github.com/Hacktiv8-Project2/ecommerce-project2.git",
   },
@@ -25,7 +25,7 @@ const projects = [
     url: "https://github.com/FinalProject03-Kel04-Hacktiv8/Kel04-FP03-Hacktiv8-Hotel-Reservation-MobileApp.git",
     title: "stayDors",
     description:
-      "StayDors is a hotel booking application. It is one of the group-based final projects completed to fulfill the requirements of the React & React Native course at Hacktiv8.",
+      "StayDors is a hotel booking app, developed as a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "React native"],
     repository:
       "https://github.com/FinalProject03-Kel04-Hacktiv8/Kel04-FP03-Hacktiv8-Hotel-Reservation-MobileApp.git",
@@ -36,7 +36,7 @@ const projects = [
     url: "https://buletin-news.vercel.app/",
     title: "buletin",
     description:
-      "The Buletin is a news application that displays news based on categories such as Indonesia, programming, and COVID-19. It is one of the group-based final projects completed to fulfill the requirements of the React & React Native course at Hacktiv8.",
+      "The Buletin is a news app that displays articles by categories like Indonesia, programming, and COVID-19. It’s a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "Flowbite", "Next.js"],
     repository: "https://github.com/hacktiv8-fp-1/news-web-api.git",
   },
@@ -46,7 +46,7 @@ const projects = [
     url: "https://movlix-fp.netlify.app/",
     title: "movlix",
     description:
-      "Movlix is a web application that allows users to search for their favorite movies and create a list of their preferred movies. It is one of the group-based final projects completed to fulfill the requirements of the React & React Native course at Hacktiv8.",
+      "Movlix is a web app that lets users search and create a list of their favorite movies. It’s a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "Flowbite", "Reactjs"],
     repository: "https://github.com/Hacktiv8-Final-Project-4/movie-app.git",
   },
@@ -56,7 +56,7 @@ const projects = [
     url: "https://jovial-clafoutis-41cfc0.netlify.app/",
     title: "resto",
     description:
-      "Resto is an application that allows users to search and find their best restaurants based on specific criteria such as location, type of food, rating, and more.",
+      "Resto is an app that helps users find the best restaurants based on criteria like location, food type, rating, and more.",
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/resto",
   },
@@ -86,7 +86,7 @@ const projects = [
     url: "https://ekialfani.github.io/lombok-profile/",
     title: "lombok profile",
     description:
-      "Displays information about the Island of Lombok, ranging from history, geography, culture and some of the famous tourist attractions on the Island of Lombok.",
+      "Displays information about Lombok Island, including its history, geography, culture, and popular tourist attractions.",
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/lombok-profile",
   },
@@ -96,7 +96,7 @@ const projects = [
     url: "https://ekialfani.github.io/web-calculator/",
     title: "web calculator",
     description:
-      "Web Calculator is a web-based application that allows us to perform simple arithmetic operations such as addition, subtraction, multiplication, and others.",
+      "Web Calculator is a web app for performing basic arithmetic operations like addition, subtraction, and multiplication.",
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/web-calculator",
   },
