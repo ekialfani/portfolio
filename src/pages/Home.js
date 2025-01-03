@@ -15,8 +15,8 @@ function Home() {
         Junior Full-Stack Developer with expertise in building applications
         using React and Golang. Experience in developing user-friendly web and
         mobile applications with interactive interfaces and scalable backends.
-        Eager to contribute to creating responsive and functional application in
-        collaborative team environment.
+        Eager to contribute to creating responsive and functional applications
+        in collaborative team environments.
       </p>
       <a
         href="mailto:ekialfani15@gmail.com"

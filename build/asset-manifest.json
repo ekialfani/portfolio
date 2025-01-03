@@ -1,24 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.d451db68.css",
-    "main.js": "/static/js/main.b7d67134.js",
+    "main.css": "/static/css/main.7eb015f9.css",
+    "main.js": "/static/js/main.52c5cdb8.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/movie-info.PNG": "/static/media/movie-info.5054b18754308473f95a.PNG",
-    "static/media/resto.PNG": "/static/media/resto.cc183e38b54360d770a7.PNG",
-    "static/media/lombok-profile.png": "/static/media/lombok-profile.37064f1e3a43a45435f6.png",
-    "static/media/sport-store.PNG": "/static/media/sport-store.ebb6279cf76a4abf48d9.PNG",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
-    "static/media/web-calculator.png": "/static/media/web-calculator.8cb92b25129fe3f83db8.png",
-    "static/media/rak-buku.PNG": "/static/media/rak-buku.21c281320dfceb10652a.PNG",
-    "static/media/profile.jpg": "/static/media/profile.bbf969d41bfe15e3bba8.jpg",
     "index.html": "/index.html",
-    "main.d451db68.css.map": "/static/css/main.d451db68.css.map",
-    "main.b7d67134.js.map": "/static/js/main.b7d67134.js.map",
+    "main.7eb015f9.css.map": "/static/css/main.7eb015f9.css.map",
+    "main.52c5cdb8.js.map": "/static/js/main.52c5cdb8.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d451db68.css",
-    "static/js/main.b7d67134.js"
+    "static/css/main.7eb015f9.css",
+    "static/js/main.52c5cdb8.js"
   ]
 }

@@ -1,7 +1,7 @@
 function Certifications() {
   return (
     <div className="h-full flex flex-col justify-center relative py-14">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-5 text-black dark:text-white">
+      <h2 className="text-2xl md:text-3xl font-bold mb-5 text-black dark:text-white">
         Certifications
       </h2>
       <ul>

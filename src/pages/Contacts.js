@@ -1,7 +1,7 @@
 function Contacts() {
   return (
     <div className="w-full md:h-full md:flex flex-col justify-center py-14">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-5 text-black dark:text-white">
+      <h2 className="text-2xl md:text-3xl font-bold mb-5 text-black dark:text-white">
         Contacts
       </h2>
       <ul className="flex gap-y-6 flex-col">

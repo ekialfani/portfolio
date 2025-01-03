@@ -10,7 +10,7 @@ function About() {
           />
         </div>
         <div className="order-2 sm:w-[80%] text-sm md:text-base text-center md:text-left md:order-1 md:w-[50%]">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-5 text-black dark:text-white">
+          <h2 className="text-2xl md:text-3xl font-bold mb-5 text-black dark:text-white">
             About <span className="text-[#4070F4]">Me</span>
           </h2>
           <p className="text-slate-500  dark:text-slate-400 leading-relaxed">
