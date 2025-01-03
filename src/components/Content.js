@@ -2,8 +2,7 @@ import AppRoute from "../routes/AppRouter";
 
 function Content() {
   return (
-    <main 
-      className="px-5 py-5 sm:px-8 md:px-10 py-8 lg:px-14 lg:py-10 2xl:px-20 overflow-auto">
+    <main className="w-[90%] sm:w-[80%] lg:w-[70%] xl:max-w-[1200px] mx-auto">
       <AppRoute />
     </main>
   );

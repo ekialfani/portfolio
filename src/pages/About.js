@@ -1,47 +1,62 @@
 function About() {
   return (
-    <div
-      className="mt-24 md:h-full md:mt-0 md:flex md:flex-col md:justify-center">
-      <h1 
-        className="text-6xl md:text-8xl xl:text-9xl capitalize font-bold text-custom-shadow">
-        eki alfani
-      </h1>
-      <h2
-        className="text-2xl md:text-4xl xl:text-5xl capitalize font-semibold text-slate-700 mt-2 mb-5 md:mb-8 2xl:mb-12 ml-1">
-        front-end developer
-      </h2>
-      <p 
-        className="text-sm lg:text-base xl:text-lg text-slate-500 mb-6 md:mb-8 2xl:mb-12 max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl xl:leading-relaxed">
-        Hi, I'm Eki Alfani, a Front-End Developer with expertise in React and React Native. I have a strong command of HTML, CSS, and JavaScript, and I'm experienced in creating responsive and visually appealing web applications. My skills include implementing component-based architecture, managing application state, and integrating APIs using React and React Native. I'm passionate about continuous learning and staying updated with the latest trends in Front-End Development.
-      </p>
-      <div 
-        className="flex gap-7 2xl:gap-10">
+    <div className="w-full relative mt-10 md:mt-0 md:h-[80vh] flex flex-col md:justify-center">
+      <div className="flex items-center flex-col md:flex-row gap-x-10 justify-between">
+        <div className="order-1 md:order-2 w-[40%] flex items-center justify-start">
+          <img
+            className="w-full sm:w-[80%]"
+            src="./images/profile.png"
+            alt="profile"
+          />
+        </div>
+        <div className="order-2 sm:w-[80%] text-sm md:text-base text-center md:text-left md:order-1 md:w-[50%]">
+          <h2 className="text-2xl md:text-3xl font-bold mb-5 text-black dark:text-white">
+            About <span className="text-[#4070F4]">Me</span>
+          </h2>
+          <p className="text-slate-500  dark:text-slate-400 leading-relaxed">
+            I am a fresh graduate in Informatics with expertise as a Full-Stack
+            Developer, focusing on React for front-end development and Golang
+            for back-end. I have participated in intensive training programs
+            such as IDCamp and Magang dan Studi Independent (MSIB), where I
+            successfully completed various group-based final projects to meet
+            graduation standards and earn certifications. Through these
+            experiences, I have developed the skills to build comprehensive
+            applications, collaborate effectively in teams, and deliver optimal
+            results.
+          </p>
+        </div>
+      </div>
+      <div className="hidden sm:flex flex-col gap-8 absolute right-0 top-0 bottom-0 justify-center">
         <a
-          className="text-2xl lg:text-3xl text-custom-shadow"
+          className="text-2xl lg:text-3xl text-[#374151] dark:text-white hover:text-[#4070F4] dark:hover:text-[#4070F4]"
           href="https://www.facebook.com/ekialfani"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           <i class="bi bi-facebook"></i>
         </a>
         <a
-          className="text-2xl lg:text-3xl text-custom-shadow"
+          className="text-2xl lg:text-3xl text-[#374151] dark:text-white hover:text-[#4070F4] dark:hover:text-[#4070F4]"
           href="https://www.instagram.com/ekialfni/"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           <i class="bi bi-instagram"></i>
         </a>
         <a
-          className="text-2xl lg:text-3xl text-custom-shadow"
+          className="text-2xl lg:text-3xl text-[#374151] dark:text-white hover:text-[#4070F4] dark:hover:text-[#4070F4]"
           href="https://www.linkedin.com/in/eki-alfani-1a1122271"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           <i class="bi bi-linkedin"></i>
         </a>
         <a
-          className="text-2xl lg:text-3xl text-custom-shadow"
+          className="text-2xl lg:text-3xl text-[#374151] dark:text-white hover:text-[#4070F4] dark:hover:text-[#4070F4]"
           href="https://github.com/ekialfani"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           <i class="bi bi-github"></i>
         </a>
       </div>

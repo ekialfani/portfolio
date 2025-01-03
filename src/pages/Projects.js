@@ -5,13 +5,12 @@ function Projects() {
   const dataProjects = getProjects();
 
   return (
-    <div>
-      <h2 
-        className="capitalize text-center text-3xl md:text-4xl 2xl:text-6xl font-bold mt-24 mb-6 md:mt-10 mb-10 md:mb-12 2xl:mb-14 2xl:mt-14 text-custom-shadow">
-        projects
+    <div className="w-full h-full py-14">
+      <h2 className="text-2xl md:text-3xl text-center font-bold mb-10 text-black dark:text-white">
+        My <span className="text-[#4070F4]">Projects</span>
       </h2>
       <Cards
-        className="grid grid-cols-[minmax(180px,_280px)] sm:grid-cols-[repeat(2,_minmax(180px,_280px))] xl:grid-cols-[repeat(3,_minmax(200px,_300px))] justify-center gap-8"
+        className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5"
         projects={dataProjects}
       />
     </div>
