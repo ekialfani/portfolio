@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import About from "../pages/About";
 import Certifications from "../pages/Certifications";
 import Contacts from "../pages/Contacts";
