@@ -1,49 +1,9 @@
 // import profile from '../assets/images/profile.jpg';
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
-import DrawerButton from "./buttons/DrawerButton";
+import { useState } from "react";
 
 function Navbar() {
-  const [isToggleOn, setIsToggleOn] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  let drawerButton;
-  let animation;
-
-  if (isToggleOn) {
-    drawerButton = (
-      <DrawerButton
-        className="absolute z-50 text-white text-2xl md:hidden"
-        onClick={() => setIsToggleOn(false)}
-      >
-        <i class="bi bi-x"></i>
-      </DrawerButton>
-    );
-    animation = "animate-drawer-show";
-  } else {
-    drawerButton = (
-      <DrawerButton
-        className="absolute z-50 text-2xl text-[#4070F4] md:hidden"
-        onClick={() => setIsToggleOn(true)}
-      >
-        <i class="bi bi-list"></i>
-      </DrawerButton>
-    );
-    animation = "animate-drawer-hide";
-  }
 
   const htmlElement = document.getElementsByTagName("html")[0];
 
@@ -55,115 +15,82 @@ function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 right-0 z-40 bg-white dark:bg-slate-900 w-full px-[5%] sm:px-[10%] lg:w-[70%] lg:px-0 xl:max-w-[1200px] mx-auto py-6 md:py-8 flex items-start md:items-center md:flex-row justify-between ${
-        scrollY > 10
-          ? "border-b border-slate-200 dark:border-slate-700"
-          : "border-none"
-      }`}
+      className={`sticky top-0 right-0 z-40 max-w-[1000px] h-[55px] mx-auto flex justify-between border-b-2 border-gray-100 dark:border-b-gray-800`}
     >
-      <div>
-        {drawerButton}
-        <NavLink className="hidden md:flex items-center" to="/">
-          <h1 className="text-xl font-semibold text-black dark:text-white">
-            Eki
-          </h1>
+      <NavLink className="h-full hidden md:flex items-center" to="/about">
+        <h1 className="text-md font-semibold text-black dark:text-white">
+          Eki Alfani
+        </h1>
+      </NavLink>
+      <ul className="flex gap-x-6">
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `inline-block h-full flex items-center text-xs ${
+              isActive
+                ? "text-black dark:text-white font-medium border-b-2 border-b-black dark:border-b-white"
+                : "text-gray-500 dark:text-gray-400"
+            }`
+          }
+        >
+          About
         </NavLink>
-      </div>
-      <ul
-        className={`absolute left-0 bg-[#4070F4] md:bg-white md:dark:bg-slate-900 w-full md:w-max md:static flex flex-col items-start gap-8 capitalize text-md font-medium md:flex-row ${animation} md:animate-none z-40`}
-      >
-        <li className="sm:w-[83%] sm:mx-auto md:w-max md:mx-0 mt-10 md:mt-0">
-          <NavLink exact to="/" onClick={() => setIsToggleOn(false)}>
-            {({ isActive }) =>
-              isActive ? (
-                <span className="md:text-[#4070F4] font-semibold">Home</span>
-              ) : (
-                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
-                  Home
-                </span>
-              )
-            }
-          </NavLink>
-        </li>
-        <li className="sm:w-[83%] sm:mx-auto md:w-max md:mx-0">
-          <NavLink exact to="/about" onClick={() => setIsToggleOn(false)}>
-            {({ isActive }) =>
-              isActive ? (
-                <span className="md:text-[#4070F4] font-semibold">about</span>
-              ) : (
-                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
-                  about
-                </span>
-              )
-            }
-          </NavLink>
-        </li>
-        <li className="sm:w-[83%] sm:mx-auto md:w-max md:mx-0">
-          <NavLink to="/skills" onClick={() => setIsToggleOn(false)}>
-            {({ isActive }) =>
-              isActive ? (
-                <span className="md:text-[#4070F4] font-semibold">skills</span>
-              ) : (
-                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
-                  skills
-                </span>
-              )
-            }
-          </NavLink>
-        </li>
-        <li className="sm:w-[83%] sm:mx-auto md:w-max md:mx-0">
-          <NavLink to="/projects" onClick={() => setIsToggleOn(false)}>
-            {({ isActive }) =>
-              isActive ? (
-                <span className="md:text-[#4070F4] font-semibold">
-                  projects
-                </span>
-              ) : (
-                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
-                  projects
-                </span>
-              )
-            }
-          </NavLink>
-        </li>
-        <li className="sm:w-[83%] sm:mx-auto md:w-max md:mx-0">
-          <NavLink to="/certifications" onClick={() => setIsToggleOn(false)}>
-            {({ isActive }) =>
-              isActive ? (
-                <span className="md:text-[#4070F4] font-semibold">
-                  certifications
-                </span>
-              ) : (
-                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
-                  certifications
-                </span>
-              )
-            }
-          </NavLink>
-        </li>
-        <li className="sm:w-[83%] sm:mx-auto md:w-max md:mx-0">
-          <NavLink to="/contacts" onClick={() => setIsToggleOn(false)}>
-            {({ isActive }) =>
-              isActive ? (
-                <span className="md:text-[#4070F4] font-semibold">
-                  contacts
-                </span>
-              ) : (
-                <span className="text-white md:text-[#374151] md:dark:text-white hover:text-[#4070F4] font-semibold">
-                  contacts
-                </span>
-              )
-            }
-          </NavLink>
-        </li>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            `inline-block h-full flex items-center text-xs ${
+              isActive
+                ? "text-black dark:text-white font-medium border-b-2 border-b-black dark:border-b-white"
+                : "text-gray-500 dark:text-gray-400"
+            }`
+          }
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          to="/experience"
+          className={({ isActive }) =>
+            `inline-block h-full flex items-center text-xs ${
+              isActive
+                ? "text-black dark:text-white font-medium border-b-2 border-b-black dark:border-b-white"
+                : "text-gray-500 dark:text-gray-400"
+            }`
+          }
+        >
+          Experience
+        </NavLink>
+        <NavLink
+          to="/certifications"
+          className={({ isActive }) =>
+            `inline-block h-full flex items-center text-xs ${
+              isActive
+                ? "text-black dark:text-white font-medium border-b-2 border-b-black dark:border-b-white"
+                : "text-gray-500 dark:text-gray-400"
+            }`
+          }
+        >
+          Certifications
+        </NavLink>
+        <NavLink
+          to="/contacts"
+          className={({ isActive }) =>
+            `inline-block h-full flex items-center text-xs ${
+              isActive
+                ? "text-black dark:text-white font-medium border-b-2 border-b-black dark:border-b-white"
+                : "text-gray-500 dark:text-gray-400"
+            }`
+          }
+        >
+          Contacts
+        </NavLink>
         <button
           className="hidden md:inline"
           onClick={() => setDarkMode((mode) => !mode)}
         >
           {darkMode ? (
-            <i class="bi bi-sun-fill text-yellow-500"></i>
+            <i class="bi bi-sun-fill text-yellow-500 text-xs"></i>
           ) : (
-            <i class="bi bi-moon-stars-fill text-[#374151]"></i>
+            <i class="bi bi-moon-stars-fill text-[#374151] text-xs"></i>
           )}
         </button>
       </ul>

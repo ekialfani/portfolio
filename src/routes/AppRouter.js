@@ -1,21 +1,18 @@
-import { Routes, Route } from "react-router-dom";
-import About from "../pages/About";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Certifications from "../pages/Certifications";
 import Contacts from "../pages/Contacts";
 import Projects from "../pages/Projects";
-import Skills from "../pages/Skills";
-import Trainings from "../pages/Trainings";
 import NotFound from "../pages/NotFound";
-import Home from "../pages/Home";
+import About from "../pages/About";
+import Experience from "../pages/Experience";
 
 function AppRoute() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Navigate to="/about" replace />} />
       <Route path="/about" element={<About />} />
-      <Route path="/trainings" element={<Trainings />} />
-      <Route path="/skills" element={<Skills />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/experience" element={<Experience />} />
       <Route path="/certifications" element={<Certifications />} />
       <Route path="/contacts" element={<Contacts />} />
       <Route path="*" element={<NotFound />} />
