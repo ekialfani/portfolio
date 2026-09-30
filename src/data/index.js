@@ -2,12 +2,13 @@ const projects = [
   {
     id: 1,
     img: "./images/exam-app.png",
-    url: "https://github.com/ekialfani/exam-app.git",
+    url: null,
     title: "Exam App",
     description:
       "An online exam app utilizing a randomization algorithm to improve security and fairness.",
     techStack: ["Tailwind", "React Native", "Go"],
     repository: "https://github.com/ekialfani/exam-app.git",
+    type: "mobile",
   },
   {
     id: 2,
@@ -18,17 +19,19 @@ const projects = [
       "Blipedia is an e-commerce app for buying and selling products online. It is a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "Reactjs"],
     repository: "https://github.com/Hacktiv8-Project2/ecommerce-project2.git",
+    type: "web",
   },
   {
     id: 3,
     img: "./images/staydors.png",
-    url: "https://github.com/FinalProject03-Kel04-Hacktiv8/Kel04-FP03-Hacktiv8-Hotel-Reservation-MobileApp.git",
+    url: null,
     title: "stayDors",
     description:
       "StayDors is a hotel booking app, developed as a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "React native"],
     repository:
       "https://github.com/FinalProject03-Kel04-Hacktiv8/Kel04-FP03-Hacktiv8-Hotel-Reservation-MobileApp.git",
+    type: "mobile",
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ const projects = [
       "The Buletin is a news app that displays articles by categories like Indonesia, programming, and COVID-19. It’s a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "Flowbite", "Next.js"],
     repository: "https://github.com/hacktiv8-fp-1/news-web-api.git",
+    type: "web",
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const projects = [
       "Movlix is a web app that lets users search and create a list of their favorite movies. It’s a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "Flowbite", "Reactjs"],
     repository: "https://github.com/Hacktiv8-Final-Project-4/movie-app.git",
+    type: "web",
   },
   {
     id: 6,
@@ -59,6 +64,7 @@ const projects = [
       "Resto is an app that helps users find the best restaurants based on criteria like location, food type, rating, and more.",
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/resto",
+    type: "web",
   },
   {
     id: 7,
@@ -69,6 +75,7 @@ const projects = [
       "A web-app to find detailed information about movies. This website is built using TMDB (The Movie Database) API.",
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/movie-info",
+    type: "web",
   },
   {
     id: 8,
@@ -79,6 +86,7 @@ const projects = [
       "Rak Buku is a web application to store reading books. We can add, update, delete, and move books between shelves.",
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/rak-buku",
+    type: "web",
   },
   {
     id: 9,
@@ -89,6 +97,7 @@ const projects = [
       "Displays information about Lombok Island, including its history, geography, culture, and popular tourist attractions.",
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/lombok-profile",
+    type: "web",
   },
   {
     id: 10,
@@ -99,6 +108,7 @@ const projects = [
       "Web Calculator is a web app for performing basic arithmetic operations like addition, subtraction, and multiplication.",
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/web-calculator",
+    type: "web",
   },
 ];
 
