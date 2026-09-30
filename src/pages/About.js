@@ -1,7 +1,7 @@
 import {
   faGitAlt,
   faGithub,
-  faNodeJs,
+  faJs,
   faReact,
   faTypescript,
 } from "@fortawesome/free-brands-svg-icons";
@@ -61,7 +61,7 @@ function Home() {
       <div className="flex items-center py-5 border-b border-b-gray-100 dark:border-b-gray-800">
         <div className="flex-1">
           <h2 className="text-md font-medium dark:text-white">Tech Stack</h2>
-          <p className="text-xs text-gray-500 max-w-[200px]">
+          <p className="text-xs text-gray-500 dark:text-gray-400 max-w-[200px]">
             Tools and technologies i use to build application
           </p>
         </div>
@@ -69,7 +69,7 @@ function Home() {
           <ul className="flex items-center gap-x-10">
             <li className="flex items-center gap-x-3">
               <FontAwesomeIcon
-                className="text-2xl font-bold dark:text-white"
+                className="text-2xl font-bold dark:text-gray-300"
                 icon={faReact}
               />
               <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
@@ -78,7 +78,7 @@ function Home() {
             </li>
             <li className="flex items-center gap-x-3">
               <FontAwesomeIcon
-                className="text-2xl font-bold dark:text-white"
+                className="text-2xl font-bold dark:text-gray-300"
                 icon={faTypescript}
               />
               <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
@@ -87,16 +87,16 @@ function Home() {
             </li>
             <li className="flex items-center gap-x-3">
               <FontAwesomeIcon
-                className="text-2xl font-bold dark:text-white"
-                icon={faNodeJs}
+                className="text-2xl font-bold dark:text-gray-300"
+                icon={faJs}
               />
               <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
-                Node JS
+                JavaScript
               </p>
             </li>
             <li className="flex items-center gap-x-3">
               <FontAwesomeIcon
-                className="text-2xl font-bold dark:text-white"
+                className="text-2xl font-bold dark:text-gray-300"
                 icon={faGitAlt}
               />
               <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
@@ -105,14 +105,14 @@ function Home() {
             </li>
             <li className="flex items-center gap-x-3">
               <FontAwesomeIcon
-                className="text-2xl font-bold dark:text-white"
+                className="text-2xl font-bold dark:text-gray-300"
                 icon={faGithub}
               />
               <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
                 Github
               </p>
             </li>
-            <button className="border-l-2 border-gray-300 dark:border-l-gray-700 pl-6 text-xs text-gray-700 dark:text-gray-400 font-medium">
+            <button className="border-l border-gray-100 dark:border-l-gray-800 pl-6 text-xs text-gray-700 dark:text-gray-400 font-medium">
               + more
             </button>
           </ul>
