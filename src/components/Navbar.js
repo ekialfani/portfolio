@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 right-0 z-40 max-w-[1000px] h-[55px] mx-auto flex justify-between border-b-2 border-gray-100 dark:border-b-gray-800`}
+      className={`sticky top-0 right-0 z-40 max-w-[1100px] h-[55px] mx-auto flex justify-between border-b-2 border-gray-100 dark:border-b-gray-800`}
     >
       <NavLink className="h-full hidden md:flex items-center" to="/about">
         <h1 className="text-md font-semibold text-black dark:text-white">
@@ -90,7 +90,7 @@ function Navbar() {
           {darkMode ? (
             <i class="bi bi-sun-fill text-yellow-500 text-xs"></i>
           ) : (
-            <i class="bi bi-moon-stars-fill text-[#374151] text-xs"></i>
+            <i class="bi bi-moon-stars-fill text-gray-500 text-xs"></i>
           )}
         </button>
       </ul>
@@ -101,7 +101,7 @@ function Navbar() {
         {darkMode ? (
           <i class="bi bi-sun-fill text-yellow-500"></i>
         ) : (
-          <i class="bi bi-moon-stars-fill text-[#374151]"></i>
+          <i class="bi bi-moon-stars-fill text-gray-500"></i>
         )}
       </button>
     </nav>

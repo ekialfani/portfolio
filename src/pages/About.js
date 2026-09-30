@@ -12,43 +12,53 @@ import React from "react";
 function Home() {
   return (
     <div className="w-full relative">
-      <div className="flex gap-x-5 pt-14 pb-10 border-b-2 border-b-gray-100 dark:border-b-gray-800">
+      <div className="flex gap-x-10 pt-14 pb-10 border-b-2 border-b-gray-100 dark:border-b-gray-800">
+        {/* LEFT */}
         <div className="flex-1">
           <h1 className="text-md text-gray-600 mb-1 dark:text-gray-400">
             Hi, I'm
           </h1>
+
           <h1 className="text-5xl font-bold dark:text-white">Eki Alfani</h1>
+
           <h2 className="text-2xl text-gray-600 dark:text-gray-400 max-w-[300px] my-3">
             I build simple and useful digital products.
           </h2>
-          <p className="text-sm text-gray-500 max-w-[400px]">
+
+          <p className="text-sm text-gray-500 max-w-[400px] leading-5">
             I'm a software developer with a focus on mobile and web application.
             I enjoy turning ideas into clean, functional, and user-friendly
             products.
           </p>
+
           <div className="flex gap-x-5 mt-5">
-            <button className="bg-black dark:bg-white px-5 py-2.5 rounded-md flex flex-row items-center gap-x-2">
+            <button className="bg-black dark:bg-white px-5 py-2.5 rounded-md flex items-center gap-x-2">
               <p className="text-white dark:text-black text-xs font-bold">
                 View Projects
               </p>
+
               <FontAwesomeIcon
                 icon={faArrowRight}
-                className="text-white dark:text-black text-xs font-bold"
+                className="text-white dark:text-black text-xs"
               />
             </button>
+
             <button className="px-5 py-2.5 text-xs font-bold border border-gray-200 dark:border-gray-500 dark:text-gray-200 rounded-md">
               Get in touch
             </button>
           </div>
         </div>
-        <div className="flex-1">
+
+        {/* RIGHT */}
+        <div className="flex-1 pl-12">
           <img
-            className="w-full h-auto rounded-lg"
             src="./images/hero.png"
             alt="hero"
+            className="w-full h-full rounded-lg"
           />
         </div>
       </div>
+
       <div className="flex items-center py-5 border-b-2 border-b-gray-100 dark:border-b-gray-800">
         <div className="flex-1">
           <h2 className="text-md font-medium dark:text-white">Tech Stack</h2>
@@ -107,6 +117,128 @@ function Home() {
               + more
             </button>
           </ul>
+        </div>
+      </div>
+
+      <div className="pt-5 pb-6 border-b-2 border-b-gray-200">
+        <div>
+          <div className="flex justify-between">
+            <p className="text-md font-medium">Featured Projects</p>
+            <button className="flex items-center gap-x-2">
+              <p className="text-xs font-medium text-gray-600">
+                View all projects
+              </p>
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="text-gray-600 dark:text-gray-100 text-xs font-bold"
+              />
+            </button>
+          </div>
+          <p className="text-xs max-w-[215px] text-gray-500 mt-2">
+            A selection of projects i'v worked on recently. Take a look at some
+            of them
+          </p>
+        </div>
+
+        <div className="grid grid-cols-3 gap-4 mt-5">
+          <div className="p-4 border border-gray-200 rounded-md">
+            <div className="h-[125px] overflow-hidden rounded-md">
+              <img src="./images/exam-app.png" alt="exam-app" />
+            </div>
+
+            <div className="pt-3">
+              <div className="flex items-center justify-between mb-2">
+                <h4 className="text-sm font-semibold">Exam App</h4>
+                <button>
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="text-gray-600 dark:text-gray-100 text-xs font-bold"
+                  />
+                </button>
+              </div>
+              <p className="text-xs text-gray-500 leading-5">
+                An e-commerce mobile app for daily needs with a simple and clean
+                user experience
+              </p>
+              <div className="flex items-center gap-x-2 mt-5">
+                <p className="text-[9px] bg-gray-200 font-medium px-3 py-0.5 rounded-full text-gray-600">
+                  React Native
+                </p>
+                <p className="text-[9px] bg-gray-200 font-medium px-3 py-0.5 rounded-full text-gray-600">
+                  Typescript
+                </p>
+                <p className="text-[9px] bg-gray-200 font-medium px-3 py-0.5 rounded-full text-gray-600">
+                  Redux Toolkit
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-4 border border-gray-200 rounded-md">
+            <div className="h-[125px] overflow-hidden rounded-md">
+              <img src="./images/staydors.png" alt="exam-app" />
+            </div>
+
+            <div className="pt-3">
+              <div className="flex items-center justify-between mb-2">
+                <h4 className="text-sm font-semibold">StayDoors</h4>
+                <button>
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="text-gray-600 dark:text-gray-100 text-xs font-bold"
+                  />
+                </button>
+              </div>
+              <p className="text-xs text-gray-500 leading-5">
+                An e-commerce mobile app for daily needs with a simple and clean
+                user experience
+              </p>
+              <div className="flex items-center gap-x-2 mt-5">
+                <p className="text-[9px] bg-gray-200 font-medium px-3 py-0.5 rounded-full text-gray-600">
+                  React Native
+                </p>
+                <p className="text-[9px] bg-gray-200 font-medium px-3 py-0.5 rounded-full text-gray-600">
+                  Typescript
+                </p>
+                <p className="text-[9px] bg-gray-200 font-medium px-3 py-0.5 rounded-full text-gray-600">
+                  Redux Toolkit
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-4 border border-gray-200 rounded-md">
+            <div className="h-[125px] overflow-hidden rounded-md">
+              <img src="./images/blipedia.png" alt="exam-app" />
+            </div>
+
+            <div className="pt-3">
+              <div className="flex items-center justify-between mb-1.5">
+                <h4 className="text-sm font-semibold">Blipedia</h4>
+                <button>
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="text-gray-600 dark:text-gray-100 text-xs font-bold"
+                  />
+                </button>
+              </div>
+              <p className="text-xs text-gray-500 leading-5">
+                An e-commerce mobile app for daily needs with a simple and clean
+                user experience
+              </p>
+              <div className="flex items-center gap-x-2 mt-5">
+                <p className="text-[9px] bg-gray-200 font-medium px-3 py-0.5 rounded-full text-gray-600">
+                  React Native
+                </p>
+                <p className="text-[9px] bg-gray-200 font-medium px-3 py-0.5 rounded-full text-gray-600">
+                  Typescript
+                </p>
+                <p className="text-[9px] bg-gray-200 font-medium px-3 py-0.5 rounded-full text-gray-600">
+                  Redux Toolkit
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
