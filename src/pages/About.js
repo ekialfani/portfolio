@@ -135,7 +135,7 @@ function Home() {
               />
             </button>
           </div>
-          <p className="text-xs max-w-[215px] text-gray-500 mt-2">
+          <p className="text-xs max-w-[215px] text-gray-500 dark:text-gray-400 mt-2">
             A selection of projects i'v worked on recently. Take a look at some
             of them
           </p>
@@ -152,12 +152,16 @@ function Home() {
                 <h4 className="text-sm font-semibold dark:text-white">
                   Exam App
                 </h4>
-                <button>
+                <a
+                  href="http://github.com/ekialfani/exam-app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     className="text-gray-600 dark:text-gray-300 text-xs font-bold"
                   />
-                </button>
+                </a>
               </div>
               <p className="text-xs text-gray-500 dark:text-gray-400 leading-5">
                 An e-commerce mobile app for daily needs with a simple and clean
@@ -173,6 +177,9 @@ function Home() {
                 <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
                   Redux Toolkit
                 </p>
+                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
+                  Golang
+                </p>
               </div>
             </div>
           </div>
@@ -187,12 +194,16 @@ function Home() {
                 <h4 className="text-sm font-semibold dark:text-white">
                   StayDoors
                 </h4>
-                <button>
+                <a
+                  href="https://github.com/FinalProject03-Kel04-Hacktiv8/Kel04-FP03-Hacktiv8-Hotel-Reservation-MobileApp.git"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     className="text-gray-600 dark:text-gray-300 text-xs font-bold"
                   />
-                </button>
+                </a>
               </div>
               <p className="text-xs text-gray-500 dark:text-gray-400 leading-5">
                 An e-commerce mobile app for daily needs with a simple and clean
@@ -222,12 +233,16 @@ function Home() {
                 <h4 className="text-sm font-semibold dark:text-white">
                   Blipedia
                 </h4>
-                <button>
+                <a
+                  href="https://blipedia.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     className="text-gray-600 dark:text-gray-300 text-xs font-bold"
                   />
-                </button>
+                </a>
               </div>
               <p className="text-xs text-gray-500 dark:text-gray-400 leading-5">
                 An e-commerce mobile app for daily needs with a simple and clean
@@ -235,10 +250,10 @@ function Home() {
               </p>
               <div className="flex items-center gap-x-2 mt-5">
                 <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  React Native
+                  React.js
                 </p>
                 <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  Typescript
+                  Tailwind CSS
                 </p>
                 <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
                   Redux Toolkit
