@@ -251,42 +251,44 @@ function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 py-8 border-b border-b-gray-100">
-        <div className="pr-12 border-r border-gray-200">
-          <h2 className="text-md font-semibold">Experience</h2>
-          <p className="text-xs text-gray-500 max-w-[250px] mt-2">
+      <div className="grid grid-cols-3 py-8 border-b border-b-gray-100 dark:border-b-gray-800">
+        <div className="pr-12 border-r border-r-gray-100 dark:border-r-gray-800">
+          <h2 className="text-md font-semibold dark:text-white">Experience</h2>
+          <p className="text-xs text-gray-500 dark:text-gray-400 max-w-[250px] mt-2">
             My work experince and what i've done along the way.
           </p>
         </div>
         <div className="flex flex-row gap-x-5 items-start px-4">
           <a href="https://blocdev.id/">
             <img
-              className="w-16 h-16"
+              className="w-16 h-16 dark:bg-white rounded-lg"
               src="/images/blockdev-logo.webp"
               alt="blockdev-logo"
             />
           </a>
 
           <div>
-            <h4 className="text-sm font-semibold">BlockDev</h4>
-            <h5 className="text-xs font-medium text-gray-600 mt-1">
+            <h4 className="text-sm font-semibold dark:text-white">BlockDev</h4>
+            <h5 className="text-xs font-medium text-gray-600 dark:text-gray-400 mt-1">
               Mobile Developer
             </h5>
-            <p className="text-xs text-gray-500 mt-2">2025 - Present</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+              2025 - Present
+            </p>
           </div>
         </div>
         <ul className="list-disc px-4">
-          <li className="text-xs text-gray-500 leading-5">
+          <li className="text-xs text-gray-500 dark:text-gray-400 leading-5">
             Developed and maintained bulky mobile app (React Native)
           </li>
-          <li className="text-xs text-gray-500 leading-5">
+          <li className="text-xs text-gray-500 dark:text-gray-400 leading-5">
             Implemented new features and integrated with backend APIs
           </li>
-          <li className="text-xs text-gray-500 leading-5">
+          <li className="text-xs text-gray-500 dark:text-gray-400 leading-5">
             Collaborated with cross-functional teams (desing, backend and
             product)
           </li>
-          <li className="text-xs text-gray-500 leading-5">
+          <li className="text-xs text-gray-500 dark:text-gray-400 leading-5">
             Improved app performance and resolved production issues
           </li>
         </ul>
