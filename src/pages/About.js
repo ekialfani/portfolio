@@ -1,14 +1,12 @@
 import {
   faGitAlt,
   faGithub,
-  faLinkedinIn,
   faNodeJs,
   faReact,
   faTypescript,
 } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
 function Home() {
   return (
@@ -251,7 +249,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 py-8 border-b border-b-gray-100 dark:border-b-gray-800">
+      <div className="grid grid-cols-3 py-8">
         <div className="pr-12 border-r border-r-gray-100 dark:border-r-gray-800">
           <h2 className="text-md font-semibold dark:text-white">Experience</h2>
           <p className="text-xs text-gray-500 dark:text-gray-400 max-w-[250px] mt-2">
@@ -293,34 +291,6 @@ function Home() {
           </li>
         </ul>
       </div>
-
-      <footer className="flex justify-between py-6">
-        <div className="flex items-center">
-          <h1 className="text-sm font-semibold pr-5 border-r border-gray-200">
-            <a href="/about">Eki Alfani</a>
-          </h1>
-          <p className="text-xs pl-5 text-gray-500">Build. Improve. Repeat.</p>
-        </div>
-        <div className="flex items-center gap-x-3 text-gray-600">
-          <a
-            href="https://github.com/ekialfani"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/eki-alfani/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedinIn} />
-          </a>
-          <a href="mailto:ekialfani15@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} />
-          </a>
-        </div>
-      </footer>
     </div>
   );
 }
