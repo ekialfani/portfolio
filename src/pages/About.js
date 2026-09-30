@@ -123,7 +123,7 @@ function Home() {
       <div className="pt-5 pb-6 border-b-2 border-b-gray-200">
         <div>
           <div className="flex justify-between">
-            <p className="text-md font-medium">Featured Projects</p>
+            <p className="text-md font-semibold">Featured Projects</p>
             <button className="flex items-center gap-x-2">
               <p className="text-xs font-medium text-gray-600">
                 View all projects
@@ -240,6 +240,44 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="grid grid-cols-3 py-8 border-b-2 border-b-gray-200 mb-10">
+        <div className="pr-12 border-r border-gray-200">
+          <h2 className="text-md font-semibold">Experience</h2>
+          <p className="text-xs text-gray-500 max-w-[250px] mt-2">
+            My work experince and what i've done along the way.
+          </p>
+        </div>
+        <div className="flex flex-row gap-x-5 items-start px-4">
+          <img
+            className="w-16 h-16"
+            src="/images/blockdev-logo.webp"
+            alt="blockdev-logo"
+          />
+          <div>
+            <h4 className="text-sm font-semibold">BlockDev</h4>
+            <h5 className="text-xs font-medium text-gray-600 mt-1">
+              Mobile Developer
+            </h5>
+            <p className="text-xs text-gray-500 mt-2">2025 - Present</p>
+          </div>
+        </div>
+        <ul className="list-disc px-4">
+          <li className="text-xs text-gray-500 leading-5">
+            Developed and maintained bulky mobile app (React Native)
+          </li>
+          <li className="text-xs text-gray-500 leading-5">
+            Implemented new features and integrated with backend APIs
+          </li>
+          <li className="text-xs text-gray-500 leading-5">
+            Collaborated with cross-functional teams (desing, backend and
+            product)
+          </li>
+          <li className="text-xs text-gray-500 leading-5">
+            Improved app performance and resolved production issues
+          </li>
+        </ul>
       </div>
     </div>
   );
