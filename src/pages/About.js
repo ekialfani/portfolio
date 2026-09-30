@@ -1,18 +1,19 @@
 import {
   faGitAlt,
   faGithub,
+  faLinkedinIn,
   faNodeJs,
   faReact,
   faTypescript,
 } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 function Home() {
   return (
     <div className="w-full relative">
-      <div className="flex gap-x-10 pt-14 pb-10 border-b-2 border-b-gray-100 dark:border-b-gray-800">
+      <div className="flex gap-x-10 pt-14 pb-10 border-b border-b-gray-100 dark:border-b-gray-800">
         {/* LEFT */}
         <div className="flex-1">
           <h1 className="text-md text-gray-600 mb-1 dark:text-gray-400">
@@ -59,7 +60,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex items-center py-5 border-b-2 border-b-gray-100 dark:border-b-gray-800">
+      <div className="flex items-center py-5 border-b border-b-gray-100 dark:border-b-gray-800">
         <div className="flex-1">
           <h2 className="text-md font-medium dark:text-white">Tech Stack</h2>
           <p className="text-xs text-gray-500 max-w-[200px]">
@@ -120,7 +121,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="pt-5 pb-6 border-b-2 border-b-gray-200">
+      <div className="pt-5 pb-6 border-b border-b-gray-100">
         <div>
           <div className="flex justify-between">
             <p className="text-md font-semibold">Featured Projects</p>
@@ -242,7 +243,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 py-8 border-b-2 border-b-gray-200 mb-10">
+      <div className="grid grid-cols-3 py-8 border-b border-b-gray-100">
         <div className="pr-12 border-r border-gray-200">
           <h2 className="text-md font-semibold">Experience</h2>
           <p className="text-xs text-gray-500 max-w-[250px] mt-2">
@@ -250,11 +251,14 @@ function Home() {
           </p>
         </div>
         <div className="flex flex-row gap-x-5 items-start px-4">
-          <img
-            className="w-16 h-16"
-            src="/images/blockdev-logo.webp"
-            alt="blockdev-logo"
-          />
+          <a href="https://blocdev.id/">
+            <img
+              className="w-16 h-16"
+              src="/images/blockdev-logo.webp"
+              alt="blockdev-logo"
+            />
+          </a>
+
           <div>
             <h4 className="text-sm font-semibold">BlockDev</h4>
             <h5 className="text-xs font-medium text-gray-600 mt-1">
@@ -279,6 +283,34 @@ function Home() {
           </li>
         </ul>
       </div>
+
+      <footer className="flex justify-between py-6">
+        <div className="flex items-center">
+          <h1 className="text-sm font-semibold pr-5 border-r border-gray-200">
+            <a href="/about">Eki Alfani</a>
+          </h1>
+          <p className="text-xs pl-5 text-gray-500">Build. Improve. Repeat.</p>
+        </div>
+        <div className="flex items-center gap-x-3 text-gray-600">
+          <a
+            href="https://github.com/ekialfani"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/eki-alfani/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </a>
+          <a href="mailto:ekialfani15@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
