@@ -24,7 +24,7 @@ function Home() {
             I build simple and useful digital products.
           </h2>
 
-          <p className="text-sm text-gray-500 max-w-[400px] leading-5">
+          <p className="text-sm text-gray-500 dark:text-gray-400 max-w-[400px] leading-5">
             I'm a software developer with a focus on mobile and web application.
             I enjoy turning ideas into clean, functional, and user-friendly
             products.
