@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 right-0 z-40 max-w-[1100px] h-[55px] mx-auto flex justify-between border-b border-gray-100 dark:border-b-gray-800 bg-white dark:bg-slate-900`}
+      className={`sticky top-0 right-0 z-40 max-w-[1100px] h-[55px] mx-auto flex justify-between border-b border-gray-100 dark:border-b-gray-800 bg-gray-50 dark:bg-slate-900`}
     >
       <NavLink className="h-full hidden md:flex items-center" to="/about">
         <h1 className="text-md font-semibold text-black dark:text-white">

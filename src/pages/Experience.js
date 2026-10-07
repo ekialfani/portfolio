@@ -1,144 +1,180 @@
+import { faReact, faTypescript } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCircle,
+  faGear,
+  faLocationDot,
+  faTrophy,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function Experience() {
   return (
-    <div>
-      <h2 className="capitalize text-3xl md:text-4xl 2xl:text-6xl font-bold mt-24 mb-4 md:mt-10 md:mb-5 2xl:mb-8 text-custom-shadow">
-        Experience
-      </h2>
-
-      <div className="w-full mb-10">
-        <div className="flex items-center justify-between flex-wrap gap-x-5 gap-y-1">
-          <h3 className="text-base md:text-lg capitalize font-semibold text-slate-700">
-            react & react native for front-end developer (studi independen)
-          </h3>
-          <span className="text-xs text-custom-shadow font-medium mb-2">
-            Feb 16, 2023 - Jun 30, 2023
-          </span>
-        </div>
-        <h4 className="capitalize text-sm md:text-base italic text-slate-700 mb-1 mt-2">
-          hacktiv8 indonesia
-        </h4>
-        <ul className="text-sm leading-relaxed md:text-base list-disc ml-3 md:ml-4 text-slate-500 md:max-w-3xl">
-          <li>Learn the basics of HTML and CSS.</li>
-          <li>
-            Learn Modern JavaScript (ES6) will serve as the overall foundation
-            and fundamental prerequisite for React.
-          </li>
-          <li>Learn Single Page Application (SPA) with React Router.</li>
-          <li>Learn state management with Redux.</li>
-          <li>Learn Redux Middleware & Async Thunk.</li>
-          <li>Learn the concept of Server-Side Rendering(SSR) with Next.js.</li>
-          <li>Learn automation testing and deploying a React App.</li>
-          <li>
-            Learn the fundamentals of React Native, its functions and usage, as
-            well as how to perform styling and layouting in React Native.
-          </li>
-        </ul>
+    <div className="w-full min-h-[86vh] py-10">
+      <div className="flex-1">
+        <h2 className="text-xs text-gray-500 font-medium mb-1">My Journey</h2>
+        <h2 className="text-3xl font-bold">Work Experience</h2>
+        <p className="text-xs text-gray-500 mt-2 max-w-[345px] leading-5">
+          My professional journey, where i've gained experience and grown as a
+          developer.
+        </p>
       </div>
+      <div className="mt-10 p-3 flex border border-gray-200 gap-x-10 rounded-lg">
+        {/* left */}
+        <div className="basis-3/4 flex gap-x-5 p-5">
+          <div className="border border-gray-200 self-start rounded-lg bg-white">
+            <img
+              className="w-30"
+              src="/images/blockdev-logo.webp"
+              alt="blockdev-logo.png"
+            />
+          </div>
+          <div>
+            <div>
+              <div className="flex justify-between">
+                <h4 className="text-sm font-bold">BlockDev</h4>
+                <p className="text-xs font-medium text-gray-500">
+                  2025 - Present
+                </p>
+              </div>
+              <h5 className="text-xs font-medium text-gray-500 my-1">
+                Mobile Developer
+              </h5>
+              <div className="flex items-center gap-x-3">
+                <div className="flex items-center gap-x-1">
+                  <FontAwesomeIcon
+                    className="text-[11px] text-gray-500"
+                    icon={faLocationDot}
+                  />
+                  <p className="text-[11px] text-gray-500">Remote</p>
+                </div>
+                <FontAwesomeIcon
+                  className="text-[3px] text-gray-500"
+                  icon={faCircle}
+                />
+                <p className="text-[11px] text-gray-500">Contract</p>
+              </div>
 
-      <div className="w-full mb-10">
-        <div className="flex items-center justify-between flex-wrap gap-x-5 gap-y-1">
-          <h3 className="text-base md:text-lg capitalize font-semibold text-slate-700">
-            menjadi front-end web developer expert (IDCamp)
-          </h3>
-          <span className="text-xs text-custom-shadow font-medium mb-2">
-            Nov 12, 2022 - Jan 26, 2023
-          </span>
-        </div>
-        <h4 className="capitalize text-sm md:text-base italic text-slate-700 mb-1 mt-2">
-          dicoding indonesia
-        </h4>
-        <ul className="text-sm leading-relaxed md:text-base list-disc ml-3 md:ml-4 text-slate-500">
-          <li>
-            Learn how to build a website by applying the mobile-first approach
-            and accessibility principles.
-          </li>
-          <li>
-            Learn JavaScript clean code and progressive web app development.
-          </li>
-          <li>
-            Learn Automation Testing and Web Performance optimization
-            techniques.
-          </li>
-          <li>
-            Learn Deployment with CI/CD and work on a final project to create a
-            restaurant catalog website.
-          </li>
-        </ul>
-      </div>
+              <p className="text-xs text-gray-500 mt-5">
+                Worked on the development, maintenance, and modernization of a
+                client-facing e-commerce mobile application after taking over
+                the project from an external vendor.
+              </p>
 
-      <div className="w-full mb-10">
-        <div className="flex items-center justify-between flex-wrap gap-x-5 gap-y-1">
-          <h3 className="text-base md:text-lg capitalize font-semibold text-slate-700">
-            belajar fundamental front-end web development (IDCamp)
-          </h3>
-          <span className="text-xs text-custom-shadow font-medium mb-2">
-            Sep 8, 2022 - Nov 7, 2022
-          </span>
+              <div className="mt-10">
+                <div className="flex items-center gap-x-3 mb-2">
+                  <FontAwesomeIcon icon={faTrophy} />
+                  <h5 className="text-md font-semibold">Key Contributions</h5>
+                </div>
+                <ul className="list-disc list-inside text-xs leading-6 text-gray-500">
+                  <li>
+                    Developed and maintained various e-commerce features based
+                    on product and business requirement.
+                  </li>
+                  <li>
+                    Redesigned the application UI and improved the overall user
+                    experience.
+                  </li>
+                  <li>
+                    Rewrote the codebase from JavaScript to TypeScript and
+                    migrated the project to a feature-based architecture to
+                    improve code quality, maintainability, and scalability.
+                  </li>
+                  <li>
+                    Upgraded React Native and third-party libraries to support
+                    the latest Android and iOS platform requirements.
+                  </li>
+                  <li>
+                    Implemented integrations such as Google Sign-In, Apple
+                    Sign-In, and push notifications.
+                  </li>
+                  <li>
+                    Improved existing features, fixed bugs, and enchanced
+                    application stability throughout the handover and ongoing
+                    development process.
+                  </li>
+                  <li>
+                    Managed and deployed application updates to the Google Play
+                    Store and Apple App Store.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <h4 className="capitalize text-sm md:text-base italic text-slate-700 mb-1 mt-2">
-          dicoding indonesia
-        </h4>
-        <ul className="text-sm leading-relaxed md:text-base list-disc ml-3 md:ml-4 text-slate-500 md:max-w-3xl">
-          <li>Learn EcmaScript 6 (ES6) and Web Components.</li>
-          <li>Learn Package Manager and Module Bundler for JavaScript.</li>
-          <li>
-            Learn Asynchronous JavaScript Requests and work on a final project
-            to create a website that implements Web Components, Webpack, and
-            displays dynamic data from a Web API using AJAX.
-          </li>
-        </ul>
-      </div>
+        {/* right */}
+        <div className="basis-1/2 bg-slate-100 p-5 rounded-lg">
+          <div className="flex items-center gap-x-3">
+            <FontAwesomeIcon className="text-sm" icon={faGear} />
+            <h4 className="text-sm font-semibold">Skills & Technologies</h4>
+          </div>
+          <ul className="mt-5 flex flex-col gap-y-5">
+            <li className="flex items-center gap-x-3">
+              <div className="bg-slate-200 w-[45px] h-[45px] flex items-center justify-center rounded-md">
+                <i className="text-2xl devicon-reactnative-original colored"></i>
+              </div>
+              <div>
+                <h5 className="text-xs font-medium">React Native</h5>
+                <p className="text-[9px] text-gray-500">
+                  Mobile App Development
+                </p>
+              </div>
+            </li>
 
-      <div className="w-full mb-10">
-        <div className="flex items-center justify-between flex-wrap gap-x-5 gap-y-1">
-          <h3 className="text-base md:text-lg capitalize font-semibold text-slate-700">
-            belajar membuat front-end web untuk pemula (IDCamp)
-          </h3>
-          <span className="text-xs text-custom-shadow font-medium mb-2">
-            Aug 10, 2022 - Sep 4, 2022
-          </span>
-        </div>
-        <h4 className="capitalize text-sm md:text-base italic text-slate-700 mb-1 mt-2">
-          dicoding indonesia
-        </h4>
-        <ul className="text-sm leading-relaxed md:text-base list-disc ml-3 md:ml-4 text-slate-500 md:max-w-3xl">
-          <li>
-            Learn Browser Object Model (BOM) and Document Object Model (DOM)
-            concepts.
-          </li>
-          <li>Learn Event Handlers and Custom Events in web development.</li>
-          <li>
-            Learn data storage with Web Storage and work on a final project to
-            create an interactive front-end web application with storage feature
-            using Web Storage.
-          </li>
-        </ul>
-      </div>
+            <li className="flex items-center gap-x-3">
+              <div className="bg-slate-200 w-[45px] h-[45px] flex items-center justify-center rounded-md">
+                <i className="text-2xl devicon-typescript-plain colored"></i>
+              </div>
+              <div>
+                <h5 className="text-xs font-medium">TypeScript</h5>
+                <p className="text-[9px] text-gray-500">Programming Language</p>
+              </div>
+            </li>
 
-      <div className="w-full mb-10">
-        <div className="flex items-center justify-between flex-wrap gap-x-5 gap-y-1">
-          <h3 className="text-base md:text-lg capitalize font-semibold text-slate-700">
-            belajar dasar pemrograman web (IDCamp)
-          </h3>
-          <span className="text-xs text-custom-shadow font-medium mb-2">
-            May 27, 2022 - Aug 10, 2022
-          </span>
+            <li className="flex items-center gap-x-3">
+              <div className="bg-slate-200 w-[45px] h-[45px] flex items-center justify-center rounded-md">
+                <i className="text-2xl devicon-redux-original colored"></i>
+              </div>
+
+              <div>
+                <h5 className="text-xs font-medium">Redux Toolkit</h5>
+                <p className="text-[9px] text-gray-500">State Management</p>
+              </div>
+            </li>
+
+            <li className="flex items-center gap-x-3">
+              <div className="bg-slate-200 w-[45px] h-[45px] flex items-center justify-center rounded-md">
+                <i className="text-2xl devicon-axios-plain colored"></i>
+              </div>
+
+              <div>
+                <h5 className="text-xs font-medium">Axios</h5>
+                <p className="text-[9px] text-gray-500">HTTP Request</p>
+              </div>
+            </li>
+
+            <li className="flex items-center gap-x-3">
+              <div className="bg-slate-200 w-[45px] h-[45px] flex items-center justify-center rounded-md">
+                <i className="text-2xl devicon-firebase-plain colored"></i>
+              </div>
+
+              <div>
+                <h5 className="text-xs font-medium">Firebase Messaging</h5>
+                <p className="text-[9px] text-gray-500">Push Notification</p>
+              </div>
+            </li>
+
+            <li className="flex items-center gap-x-3">
+              <div className="bg-slate-200 w-[45px] h-[45px] flex items-center justify-center rounded-md">
+                <i className="text-2xl devicon-git-plain colored"></i>
+              </div>
+
+              <div>
+                <h5 className="text-xs font-medium">Git</h5>
+                <p className="text-[9px] text-gray-500">Version Control</p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <h4 className="capitalize text-sm md:text-base italic text-slate-700 mb-1 mt-2">
-          dicoding indonesia
-        </h4>
-        <ul className="text-sm leading-relaxed md:text-base list-disc ml-3 md:ml-4 text-slate-500 md:max-w-3xl">
-          <li>
-            Learn the introduction of websites, how they work, and the tools
-            used to develop them.
-          </li>
-          <li>Learn HTML and CSS.</li>
-          <li>
-            Learn how to create responsive layouts with Flexbox and work on a
-            final project to create a simple website that implements semantic
-            elements and Flexbox or Float layouts.
-          </li>
-        </ul>
       </div>
     </div>
   );
