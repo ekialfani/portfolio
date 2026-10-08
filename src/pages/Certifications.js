@@ -127,18 +127,28 @@ const certifications = [
 function Certifications() {
   return (
     <div className="w-full min-h-[86vh] py-10">
-      <div>
-        <h2 className="text-xs text-gray-500 font-medium mb-1">
-          My Certifications
-        </h2>
-        <h2 className="text-3xl font-bold">Training & Certifications</h2>
-        <p className="text-xs text-gray-500 mt-2 max-w-[345px] leading-5">
-          A collection of certificates from various training programs and
-          bootcamps i've completed to improve my skills and stay up to date with
-          technology.
-        </p>
+      <div className="flex justify-between items-center">
+        <div>
+          <h2 className="text-xs text-gray-500 font-medium mb-1">
+            My Certifications
+          </h2>
+          <h2 className="text-3xl font-bold">Training & Certifications</h2>
+          <p className="text-xs text-gray-500 mt-2 max-w-[345px] leading-5">
+            A collection of certificates from various training programs and
+            bootcamps i've completed to improve my skills and stay up to date
+            with technology.
+          </p>
+        </div>
+        <div className="w-48 h-48">
+          <img
+            className="w-full h-full object-contain"
+            src="/images/certificate-hero.png"
+            alt="hero.png"
+          />
+        </div>
       </div>
-      <div className="mt-10 grid grid-cols-3 gap-3">
+
+      <div className="mt-3 grid grid-cols-3 gap-3">
         {certifications?.map((certif) => (
           <div
             key={certif?.id}
