@@ -81,7 +81,7 @@ function Navbar() {
             }`
           }
         >
-          Contacts
+          Contact
         </NavLink>
         <button
           className="hidden md:inline"
