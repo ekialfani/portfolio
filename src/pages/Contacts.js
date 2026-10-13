@@ -73,13 +73,17 @@ function Contacts() {
 
   return (
     <section className="w-full min-h-[86vh] py-10">
-      <h2 className="text-sm text-gray-500 font-medium mb-1">Get in Touch</h2>
+      <h2 className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1">
+        Get in Touch
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-6">
         <div>
-          <h1 className="text-3xl font-bold">Let's Work Together</h1>
+          <h1 className="text-3xl font-bold dark:text-gray-100">
+            Let's Work Together
+          </h1>
 
-          <p className="text-sm text-gray-500 mt-5 max-w-[340px] leading-6">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-5 max-w-[340px] leading-6">
             I'm always open to discussing new projects, creative ideas or
             opportunities. Feel free to reach out through the form or other
             channels below.
@@ -91,15 +95,19 @@ function Contacts() {
                 className="flex items-center gap-x-4"
                 href="mailto:ekii.dev@gmail.com"
               >
-                <div className="w-8 h-8 shrink-0 rounded-full bg-gray-200 border border-gray-400 flex justify-center items-center">
+                <div className="w-8 h-8 shrink-0 rounded-full bg-gray-200 dark:bg-gray-300 border border-gray-400 dark:border-gray-500 flex justify-center items-center">
                   <FontAwesomeIcon
-                    className="text-gray-800"
+                    className="text-gray-800 dark:text-gray-700"
                     icon={faEnvelope}
                   />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-gray-600">Email</p>
-                  <p className="text-xs text-gray-500">ekii.dev@gmail.com</p>
+                  <p className="text-sm font-medium text-gray-600 dark:text-gray-300">
+                    Email
+                  </p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    ekii.dev@gmail.com
+                  </p>
                 </div>
               </a>
             </li>
@@ -111,15 +119,17 @@ function Contacts() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-8 h-8 shrink-0 rounded-full bg-gray-200 border border-gray-400 flex justify-center items-center">
+                <div className="w-8 h-8 shrink-0 rounded-full bg-gray-200 dark:bg-gray-300 dark:bg-gray-300 border border-gray-400 dark:border-gray-500 flex justify-center items-center">
                   <FontAwesomeIcon
-                    className="text-gray-800"
+                    className="text-gray-800 dark:text-gray-700"
                     icon={faLinkedin}
                   />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-gray-600">LinkedIn</p>
-                  <p className="text-xs text-gray-500">
+                  <p className="text-sm font-medium text-gray-600 dark:text-gray-300">
+                    LinkedIn
+                  </p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
                     linkedin.com/in/eki-alfani
                   </p>
                 </div>
@@ -127,26 +137,33 @@ function Contacts() {
             </li>
 
             <li className="mb-6 flex items-center gap-x-4">
-              <div className="w-8 h-8 shrink-0 rounded-full bg-gray-200 border border-gray-400 flex justify-center items-center">
+              <div className="w-8 h-8 shrink-0 rounded-full bg-gray-200 dark:bg-gray-300 border border-gray-400 dark:border-gray-500 flex justify-center items-center">
                 <FontAwesomeIcon
-                  className="text-gray-800"
+                  className="text-gray-800 dark:text-gray-700"
                   icon={faLocationDot}
                 />
               </div>
               <div>
-                <p className="text-sm font-medium text-gray-600">Location</p>
-                <p className="text-xs text-gray-500">Lombok, Indonesia</p>
+                <p className="text-sm font-medium text-gray-600 dark:text-gray-300">
+                  Location
+                </p>
+                <p className="text-xs text-gray-500 dark:text-gray-400">
+                  Lombok, Indonesia
+                </p>
               </div>
             </li>
           </ul>
         </div>
 
         <form
-          className="bg-white p-6 sm:p-8 border border-gray-200 rounded-md"
+          className="bg-white dark:bg-slate-800 p-6 sm:p-8 border border-gray-200 dark:border-gray-700 rounded-md"
           onSubmit={handleSubmit}
         >
           <div className="mb-5">
-            <label htmlFor="name" className="block text-sm font-medium mb-1">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium mb-1 dark:text-gray-200"
+            >
               Name
             </label>
             <input
@@ -156,7 +173,7 @@ function Contacts() {
               autoComplete="name"
               value={form.name}
               onChange={handleChange}
-              className="text-sm w-full py-2 px-3 border border-gray-200 focus:border-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-700 rounded-md"
+              className="text-sm dark:text-gray-100 w-full py-2 px-3 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:border-gray-700 focus:dark:border-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-700 rounded-md"
               placeholder="Your name"
               required
               maxLength={100}
@@ -164,7 +181,10 @@ function Contacts() {
           </div>
 
           <div className="mb-5">
-            <label htmlFor="email" className="block text-sm font-medium mb-1">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium mb-1 dark:text-gray-200"
+            >
               Email
             </label>
             <input
@@ -174,7 +194,7 @@ function Contacts() {
               autoComplete="email"
               value={form.email}
               onChange={handleChange}
-              className="text-sm w-full py-2 px-3 border border-gray-200 focus:border-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-700 rounded-md"
+              className="text-sm dark:text-gray-100 w-full py-2 px-3 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:border-gray-700 focus:dark:border-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-700 rounded-md"
               placeholder="you@example.com"
               required
               maxLength={254}
@@ -182,7 +202,10 @@ function Contacts() {
           </div>
 
           <div className="mb-5">
-            <label htmlFor="message" className="block text-sm font-medium mb-1">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium mb-1 dark:text-gray-200"
+            >
               Message
             </label>
             <textarea
@@ -190,7 +213,7 @@ function Contacts() {
               name="message"
               value={form.message}
               onChange={handleChange}
-              className="w-full min-h-28 border border-gray-200 p-3 text-sm focus:outline-none focus:border-gray-700 focus:ring-1 focus:ring-gray-700 rounded-md"
+              className="text-sm dark:text-gray-100 w-full min-h-28 py-2 px-3 dark:bg-slate-800 border border-gray-200 dark:border-gray-700 focus:border-gray-700 focus:dark:border-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-700 rounded-md"
               placeholder="Type your message here..."
               required
               maxLength={5000}
@@ -212,7 +235,7 @@ function Contacts() {
           <button
             type="submit"
             disabled={isSending}
-            className="text-sm font-semibold py-2.5 px-4 bg-black text-white rounded-md flex items-center gap-x-2 transition-colors hover:bg-gray-800 disabled:opacity-60 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+            className="text-sm font-semibold py-2.5 px-4 bg-black dark:bg-gray-100 text-white dark:text-gray-900 rounded-md flex items-center gap-x-2 transition-colors hover:bg-gray-800 disabled:opacity-60 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
           >
             <span>{isSending ? "Sending..." : "Send Message"}</span>
 
