@@ -9,6 +9,7 @@ const projects = [
     techStack: ["Tailwind", "React Native", "Go"],
     repository: "https://github.com/ekialfani/exam-app.git",
     type: "mobile",
+    isSelected: true,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const projects = [
     techStack: ["Tailwind", "Reactjs"],
     repository: "https://github.com/Hacktiv8-Project2/ecommerce-project2.git",
     type: "web",
+    isSelected: true,
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ const projects = [
     repository:
       "https://github.com/FinalProject03-Kel04-Hacktiv8/Kel04-FP03-Hacktiv8-Hotel-Reservation-MobileApp.git",
     type: "mobile",
+    isSelected: true,
   },
   {
     id: 4,
@@ -43,6 +46,7 @@ const projects = [
     techStack: ["Tailwind", "Flowbite", "Next.js"],
     repository: "https://github.com/hacktiv8-fp-1/news-web-api.git",
     type: "web",
+    isSelected: false,
   },
   {
     id: 5,
@@ -54,6 +58,7 @@ const projects = [
     techStack: ["Tailwind", "Flowbite", "Reactjs"],
     repository: "https://github.com/Hacktiv8-Final-Project-4/movie-app.git",
     type: "web",
+    isSelected: false,
   },
   {
     id: 6,
@@ -65,6 +70,7 @@ const projects = [
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/resto",
     type: "web",
+    isSelected: false,
   },
   {
     id: 7,
@@ -76,6 +82,7 @@ const projects = [
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/movie-info",
     type: "web",
+    isSelected: false,
   },
   {
     id: 8,
@@ -87,6 +94,7 @@ const projects = [
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/rak-buku",
     type: "web",
+    isSelected: false,
   },
   {
     id: 9,
@@ -98,6 +106,7 @@ const projects = [
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/lombok-profile",
     type: "web",
+    isSelected: false,
   },
   {
     id: 10,
@@ -109,6 +118,7 @@ const projects = [
     techStack: ["HTML", "CSS", "JavaScript"],
     repository: "https://github.com/ekialfani/web-calculator",
     type: "web",
+    isSelected: false,
   },
 ];
 

@@ -7,11 +7,16 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import getProjects from "../data";
+import TechStackDropdown from "../components/dropdown";
 
 function Home() {
+  const projects = getProjects();
+  const selectedProjects = projects?.filter((project) => project?.isSelected);
+
   return (
     <div className="w-full relative">
-      <div className="flex gap-x-10 pt-14 pb-10 border-b border-b-gray-100 dark:border-b-gray-800">
+      <div className="flex gap-x-10 pt-14 pb-10 border-b border-b-gray-200 dark:border-b-gray-800">
         {/* LEFT */}
         <div className="flex-1">
           <h1 className="text-md text-gray-600 mb-1 dark:text-gray-400">
@@ -58,68 +63,59 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex items-center py-5 border-b border-b-gray-100 dark:border-b-gray-800">
+      <div className="flex items-center py-5 border-b border-b-gray-200 dark:border-b-gray-800">
         <div className="flex-1">
           <h2 className="text-md font-medium dark:text-white">Tech Stack</h2>
-          <p className="text-xs text-gray-500 dark:text-gray-400 max-w-[200px]">
+          <p className="text-sm text-gray-500 dark:text-gray-400 max-w-[200px]">
             Tools and technologies i use to build application
           </p>
         </div>
         <div className="flex-2">
           <ul className="flex items-center gap-x-10">
             <li className="flex items-center gap-x-3">
-              <FontAwesomeIcon
-                className="text-2xl font-bold dark:text-gray-300"
-                icon={faReact}
-              />
+              <i className="devicon-react-original text-2xl text-gray-700 dark:text-gray-300"></i>
+
               <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
                 React Native
               </p>
             </li>
             <li className="flex items-center gap-x-3">
-              <FontAwesomeIcon
-                className="text-2xl font-bold dark:text-gray-300"
-                icon={faTypescript}
-              />
+              <i className="devicon-typescript-plain text-2xl text-gray-700 dark:text-gray-300"></i>
+
               <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
                 Typescript
               </p>
             </li>
             <li className="flex items-center gap-x-3">
-              <FontAwesomeIcon
-                className="text-2xl font-bold dark:text-gray-300"
-                icon={faJs}
-              />
+              <i className="devicon-redux-original text-2xl text-gray-700 dark:text-gray-300"></i>
+
               <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
-                JavaScript
+                Redux Toolkit
               </p>
             </li>
             <li className="flex items-center gap-x-3">
-              <FontAwesomeIcon
-                className="text-2xl font-bold dark:text-gray-300"
-                icon={faGitAlt}
-              />
+              <i className="devicon-firebase-plain text-2xl text-gray-700 dark:text-gray-300"></i>
+
+              <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
+                Firebase
+              </p>
+            </li>
+            <li className="flex items-center gap-x-3">
+              <i className="devicon-git-plain text-2xl text-gray-700 dark:text-gray-300"></i>
+
               <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
                 Git
               </p>
             </li>
-            <li className="flex items-center gap-x-3">
-              <FontAwesomeIcon
-                className="text-2xl font-bold dark:text-gray-300"
-                icon={faGithub}
-              />
-              <p className="text-xs text-gray-700 dark:text-gray-400 font-medium">
-                Github
-              </p>
-            </li>
-            <button className="border-l border-gray-100 dark:border-l-gray-800 pl-6 text-xs text-gray-700 dark:text-gray-400 font-medium">
+            {/* <button className="border-l border-gray-200 dark:border-l-gray-800 pl-6 text-xs text-gray-700 dark:text-gray-400 font-medium">
               + more
-            </button>
+            </button> */}
+            <TechStackDropdown />
           </ul>
         </div>
       </div>
 
-      <div className="pt-5 pb-6 border-b border-b-gray-100 dark:border-b-gray-800">
+      <div className="pt-5 pb-6 border-b border-b-gray-200 dark:border-b-gray-800">
         <div>
           <div className="flex justify-between">
             <p className="text-md font-semibold dark:text-white">
@@ -135,153 +131,72 @@ function Home() {
               />
             </button>
           </div>
-          <p className="text-xs max-w-[215px] text-gray-500 dark:text-gray-400 mt-2">
+          <p className="text-sm max-w-[300px] text-gray-500 dark:text-gray-400 mt-2">
             A selection of projects i'v worked on recently. Take a look at some
             of them
           </p>
         </div>
 
         <div className="grid grid-cols-3 gap-4 mt-5">
-          <div className="p-4 border border-gray-200 dark:border-gray-600 rounded-md">
-            <div className="h-[125px] overflow-hidden rounded-md">
-              <img src="./images/exam-app.png" alt="exam-app" />
-            </div>
+          {selectedProjects?.map((project) => (
+            <div
+              key={project?.id}
+              className="p-4 border border-gray-200 dark:border-gray-600 rounded-md"
+            >
+              <div className="h-[125px] overflow-hidden rounded-md">
+                <img src={project?.img} alt="exam-app" />
+              </div>
 
-            <div className="pt-3">
-              <div className="flex items-center justify-between mb-2">
-                <h4 className="text-sm font-semibold dark:text-white">
-                  Exam App
-                </h4>
-                <a
-                  href="http://github.com/ekialfani/exam-app"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    className="text-gray-600 dark:text-gray-300 text-xs font-bold"
-                  />
-                </a>
-              </div>
-              <p className="text-xs text-gray-500 dark:text-gray-400 leading-5">
-                An e-commerce mobile app for daily needs with a simple and clean
-                user experience
-              </p>
-              <div className="flex items-center gap-x-2 mt-5">
-                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  React Native
+              <div className="pt-3">
+                <div className="flex items-center justify-between mb-2">
+                  <h4 className="text-sm font-semibold dark:text-white">
+                    {project?.title}
+                  </h4>
+                  <a
+                    href="http://github.com/ekialfani/exam-app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="text-gray-600 dark:text-gray-300 text-xs font-bold"
+                    />
+                  </a>
+                </div>
+                <p className="text-xs text-gray-500 dark:text-gray-400 leading-5 line-clamp-2">
+                  {project?.description}
                 </p>
-                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  Typescript
-                </p>
-                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  Redux Toolkit
-                </p>
-                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  Golang
-                </p>
+                <div className="flex items-center gap-x-2 mt-5">
+                  {project?.techStack?.map((stack) => (
+                    <p className="text-[10px] bg-gray-200 dark:bg-gray-800 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-300">
+                      {stack}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="p-4 border border-gray-200 dark:border-gray-600 rounded-md">
-            <div className="h-[125px] overflow-hidden rounded-md">
-              <img src="./images/staydors.png" alt="exam-app" />
-            </div>
-
-            <div className="pt-3">
-              <div className="flex items-center justify-between mb-2">
-                <h4 className="text-sm font-semibold dark:text-white">
-                  StayDoors
-                </h4>
-                <a
-                  href="https://github.com/FinalProject03-Kel04-Hacktiv8/Kel04-FP03-Hacktiv8-Hotel-Reservation-MobileApp.git"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    className="text-gray-600 dark:text-gray-300 text-xs font-bold"
-                  />
-                </a>
-              </div>
-              <p className="text-xs text-gray-500 dark:text-gray-400 leading-5">
-                An e-commerce mobile app for daily needs with a simple and clean
-                user experience
-              </p>
-              <div className="flex items-center gap-x-2 mt-5">
-                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  React Native
-                </p>
-                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  Typescript
-                </p>
-                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  Redux Toolkit
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-4 border border-gray-200 dark:border-gray-600 rounded-md">
-            <div className="h-[125px] overflow-hidden rounded-md">
-              <img src="./images/blipedia.png" alt="exam-app" />
-            </div>
-
-            <div className="pt-3">
-              <div className="flex items-center justify-between mb-1.5">
-                <h4 className="text-sm font-semibold dark:text-white">
-                  Blipedia
-                </h4>
-                <a
-                  href="https://blipedia.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    className="text-gray-600 dark:text-gray-300 text-xs font-bold"
-                  />
-                </a>
-              </div>
-              <p className="text-xs text-gray-500 dark:text-gray-400 leading-5">
-                An e-commerce mobile app for daily needs with a simple and clean
-                user experience
-              </p>
-              <div className="flex items-center gap-x-2 mt-5">
-                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  React.js
-                </p>
-                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  Tailwind CSS
-                </p>
-                <p className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800">
-                  Redux Toolkit
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
       <div className="grid grid-cols-3 py-8">
         <div className="pr-12 border-r border-r-gray-100 dark:border-r-gray-800">
           <h2 className="text-md font-semibold dark:text-white">Experience</h2>
-          <p className="text-xs text-gray-500 dark:text-gray-400 max-w-[250px] mt-2">
+          <p className="text-sm text-gray-500 dark:text-gray-400 max-w-[250px] mt-2">
             My work experince and what i've done along the way.
           </p>
         </div>
         <div className="flex flex-row gap-x-5 items-start px-4">
-          <a href="https://blocdev.id/">
+          <a href="https://blocdev.id/" target="_blank" rel="noreferrer">
             <img
-              className="w-16 h-16 dark:bg-white rounded-lg"
+              className="w-16 h-16 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-lg"
               src="/images/blockdev-logo.webp"
               alt="blockdev-logo"
             />
           </a>
 
           <div>
-            <h4 className="text-sm font-semibold dark:text-white">BlockDev</h4>
+            <h4 className="text-sm font-semibold dark:text-white">BlocDev</h4>
             <h5 className="text-xs font-medium text-gray-600 dark:text-gray-400 mt-1">
               Mobile Developer
             </h5>
@@ -292,17 +207,16 @@ function Home() {
         </div>
         <ul className="list-disc px-4">
           <li className="text-xs text-gray-500 dark:text-gray-400 leading-5">
-            Developed and maintained bulky mobile app (React Native)
+            Developed and maintained e-commerce features while improving UI/UX
+            and application stability.
           </li>
           <li className="text-xs text-gray-500 dark:text-gray-400 leading-5">
-            Implemented new features and integrated with backend APIs
+            Modernized the codebase with TypeScript, feature-based architecture,
+            and React Native upgrades.
           </li>
           <li className="text-xs text-gray-500 dark:text-gray-400 leading-5">
-            Collaborated with cross-functional teams (desing, backend and
-            product)
-          </li>
-          <li className="text-xs text-gray-500 dark:text-gray-400 leading-5">
-            Improved app performance and resolved production issues
+            Integrated authentication and push notifications, and managed
+            releases to Google Play Store and Apple App Store.
           </li>
         </ul>
       </div>

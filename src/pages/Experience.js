@@ -21,10 +21,10 @@ function Experience() {
           developer.
         </p>
       </div>
-      <div className="mt-10 p-3 flex border border-gray-200 dark:border-gray-700 gap-x-10 rounded-lg">
+      <div className="mt-10 p-3 flex border border-gray-200 dark:border-slate-800 gap-x-10 rounded-lg">
         {/* left */}
         <div className="basis-3/4 flex gap-x-5 p-5">
-          <div className="border border-gray-200 dark:border-gray-500 self-start rounded-lg bg-white dark:bg-gray-300">
+          <div className="border border-gray-200 dark:border-gray-700 self-start rounded-lg bg-white dark:bg-gray-800">
             <img
               className="w-30"
               src="/images/blockdev-logo.webp"
@@ -35,7 +35,7 @@ function Experience() {
             <div>
               <div className="flex justify-between">
                 <h4 className="text-sm font-bold dark:text-gray-100">
-                  BlockDev
+                  BlocDev
                 </h4>
                 <p className="text-xs font-medium text-gray-500 dark:text-gray-400">
                   2025 - Present
