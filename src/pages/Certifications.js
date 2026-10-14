@@ -129,11 +129,13 @@ function Certifications() {
     <div className="w-full min-h-[86vh] py-10">
       <div className="flex justify-between items-center">
         <div>
-          <h2 className="text-xs text-gray-500 font-medium mb-1">
+          <h2 className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1">
             My Certifications
           </h2>
-          <h2 className="text-3xl font-bold">Training & Certifications</h2>
-          <p className="text-xs text-gray-500 mt-2 max-w-[345px] leading-5">
+          <h2 className="text-3xl font-bold dark:text-gray-100">
+            Training & Certifications
+          </h2>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-3 max-w-[400px] leading-6">
             A collection of certificates from various training programs and
             bootcamps i've completed to improve my skills and stay up to date
             with technology.
@@ -152,11 +154,11 @@ function Certifications() {
         {certifications?.map((certif) => (
           <div
             key={certif?.id}
-            className="border border-gray-200 rounded-md p-3"
+            className="border border-gray-200 dark:border-gray-700 rounded-md p-3"
           >
             <div className="flex gap-x-5">
               <div>
-                <div className="w-[50px] h-[50px] p-2 border border-gray-200 rounded-md">
+                <div className="w-[50px] h-[50px] p-2 border border-gray-200 dark:border-gray-700 rounded-md">
                   <img
                     className="w-full h-full object-cover rounded-md"
                     src={certif?.logo}
@@ -165,18 +167,20 @@ function Certifications() {
                 </div>
               </div>
               <div>
-                <h4 className="text-xs font-semibold">{certif?.name}</h4>
-                <p className="text-[10px] text-gray-500 mt-1">
+                <h4 className="text-xs font-semibold dark:text-gray-100">
+                  {certif?.name}
+                </h4>
+                <p className="text-[10px] text-gray-500 dark:text-gray-400 mt-1">
                   {certif?.programType} - {certif?.provider}
                 </p>
-                <div className="flex items-center gap-x-1 text-[11px] font-medium text-gray-500 mt-3">
+                <div className="flex items-center gap-x-1 text-[11px] font-medium text-gray-500 dark:text-gray-400 mt-3">
                   <FontAwesomeIcon icon={faCalendarDays} />
                   <p>{certif?.date}</p>
                 </div>
               </div>
             </div>
             <a
-              className="text-gray-500 inline-block flex gap-x-2 items-center mt-6"
+              className="text-gray-500 dark:text-gray-400 inline-block flex gap-x-2 items-center mt-6"
               href={certif?.url}
               target="_blank"
               rel="noreferrer"
