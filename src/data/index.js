@@ -14,7 +14,7 @@ const projects = [
     id: 2,
     img: "./images/blipedia.png",
     url: "https://blipedia.netlify.app/",
-    title: "blipedia",
+    title: "Blipedia",
     description:
       "Blipedia is an e-commerce app for buying and selling products online. It is a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "Reactjs"],
@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     img: "./images/staydors.png",
     url: null,
-    title: "stayDors",
+    title: "StayDors",
     description:
       "StayDors is a hotel booking app, developed as a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "React native"],
@@ -37,7 +37,7 @@ const projects = [
     id: 4,
     img: "./images/buletin.png",
     url: "https://buletin-news.vercel.app/",
-    title: "buletin",
+    title: "Buletin",
     description:
       "The Buletin is a news app that displays articles by categories like Indonesia, programming, and COVID-19. It’s a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "Flowbite", "Next.js"],
@@ -48,7 +48,7 @@ const projects = [
     id: 5,
     img: "./images/movlix.png",
     url: "https://movlix-fp.netlify.app/",
-    title: "movlix",
+    title: "Movlix",
     description:
       "Movlix is a web app that lets users search and create a list of their favorite movies. It’s a group project for the React & React Native course at Hacktiv8.",
     techStack: ["Tailwind", "Flowbite", "Reactjs"],
@@ -59,7 +59,7 @@ const projects = [
     id: 6,
     img: "./images/resto.png",
     url: "https://jovial-clafoutis-41cfc0.netlify.app/",
-    title: "resto",
+    title: "Resto",
     description:
       "Resto is an app that helps users find the best restaurants based on criteria like location, food type, rating, and more.",
     techStack: ["HTML", "CSS", "JavaScript"],
@@ -70,7 +70,7 @@ const projects = [
     id: 7,
     img: "./images/movie-info.png",
     url: "https://ekialfani.github.io/movie-info/",
-    title: "movie info",
+    title: "Movie Info",
     description:
       "A web-app to find detailed information about movies. This website is built using TMDB (The Movie Database) API.",
     techStack: ["HTML", "CSS", "JavaScript"],
@@ -81,7 +81,7 @@ const projects = [
     id: 8,
     img: "./images/rak-buku.png",
     url: "https://ekialfani.github.io/rak-buku/",
-    title: "rak buku",
+    title: "Rak Buku",
     description:
       "Rak Buku is a web application to store reading books. We can add, update, delete, and move books between shelves.",
     techStack: ["HTML", "CSS", "JavaScript"],
@@ -92,7 +92,7 @@ const projects = [
     id: 9,
     img: "./images/lombok-profile.png",
     url: "https://ekialfani.github.io/lombok-profile/",
-    title: "lombok profile",
+    title: "Lombok Profile",
     description:
       "Displays information about Lombok Island, including its history, geography, culture, and popular tourist attractions.",
     techStack: ["HTML", "CSS", "JavaScript"],
@@ -103,7 +103,7 @@ const projects = [
     id: 10,
     img: "./images/web-calculator.png",
     url: "https://ekialfani.github.io/web-calculator/",
-    title: "web calculator",
+    title: "Web Calculator",
     description:
       "Web Calculator is a web app for performing basic arithmetic operations like addition, subtraction, and multiplication.",
     techStack: ["HTML", "CSS", "JavaScript"],

@@ -17,11 +17,13 @@ export default function CardItem({ project }) {
       <div className="flex flex-col flex-1 mt-2">
         <div className="mb-1">
           <div className="flex justify-between items-center">
-            <h4 className="text-sm font-semibold">{project.title}</h4>
+            <h4 className="text-sm font-semibold dark:text-gray-200">
+              {project.title}
+            </h4>
             {project?.url && (
               <a href={project?.url} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon
-                  className="text-[10px] font-medium"
+                  className="text-[10px] font-medium dark:text-gray-300"
                   icon={faArrowUpRightFromSquare}
                 />
               </a>
@@ -38,7 +40,7 @@ export default function CardItem({ project }) {
           <div className="flex flex-wrap gap-1">
             {project.techStack.map((stack, index) => (
               <p
-                className="text-[9px] bg-gray-200 dark:bg-gray-400 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-800"
+                className="text-[10px] bg-gray-200 dark:bg-gray-800 font-medium px-3 py-0.5 rounded-full text-gray-600 dark:text-gray-300"
                 key={index}
               >
                 {stack}
@@ -47,7 +49,7 @@ export default function CardItem({ project }) {
           </div>
 
           <a
-            className="text-md text-slate-700 dark:text-slate-200 ml-2"
+            className="text-md text-slate-700 dark:text-slate-300 ml-2"
             href={project.repository}
             target="_blank"
             rel="noreferrer"

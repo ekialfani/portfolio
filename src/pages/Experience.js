@@ -1,4 +1,3 @@
-import { faReact, faTypescript } from "@fortawesome/free-brands-svg-icons";
 import {
   faCircle,
   faGear,
@@ -17,7 +16,7 @@ function Experience() {
         <h2 className="text-3xl font-bold dark:text-gray-100">
           Work Experience
         </h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 max-w-[350px] leading-6">
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-3 max-w-[350px] leading-6">
           My professional journey, where i've gained experience and grown as a
           developer.
         </p>
