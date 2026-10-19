@@ -1,18 +1,21 @@
-import {
-  faGitAlt,
-  faGithub,
-  faJs,
-  faReact,
-  faTypescript,
-} from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import getProjects from "../data";
 import TechStackDropdown from "../components/dropdown";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   const projects = getProjects();
   const selectedProjects = projects?.filter((project) => project?.isSelected);
+
+  const handleGetInTouch = () => {
+    navigate("/contacts");
+  };
+
+  const handleSeeAllProjects = () => {
+    navigate("/projects");
+  };
 
   return (
     <div className="w-full relative">
@@ -36,7 +39,10 @@ function Home() {
           </p>
 
           <div className="flex gap-x-5 mt-5">
-            <button className="bg-black dark:bg-white px-5 py-2.5 rounded-md flex items-center gap-x-2">
+            <button
+              className="bg-black dark:bg-white px-5 py-2.5 rounded-md flex items-center gap-x-2"
+              onClick={handleSeeAllProjects}
+            >
               <p className="text-white dark:text-black text-xs font-bold">
                 View Projects
               </p>
@@ -47,7 +53,10 @@ function Home() {
               />
             </button>
 
-            <button className="px-5 py-2.5 text-xs font-bold border border-gray-200 dark:border-gray-500 dark:text-gray-200 rounded-md">
+            <button
+              className="px-5 py-2.5 text-xs font-bold border border-gray-200 dark:border-gray-500 dark:text-gray-200 rounded-md"
+              onClick={handleGetInTouch}
+            >
               Get in touch
             </button>
           </div>
@@ -121,7 +130,10 @@ function Home() {
             <p className="text-md font-semibold dark:text-white">
               Featured Projects
             </p>
-            <button className="flex items-center gap-x-2">
+            <button
+              className="flex items-center gap-x-2"
+              onClick={handleSeeAllProjects}
+            >
               <p className="text-xs font-medium text-gray-600 dark:text-gray-200">
                 View all projects
               </p>
@@ -153,7 +165,7 @@ function Home() {
                     {project?.title}
                   </h4>
                   <a
-                    href="http://github.com/ekialfani/exam-app"
+                    href={project?.url ? project?.url : project?.repository}
                     target="_blank"
                     rel="noreferrer"
                   >
