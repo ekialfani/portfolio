@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
-    <footer className="max-w-[1100px] mx-auto flex justify-between py-6 border-t border-b-gray-100 dark:border-t-gray-800">
+    <footer className="max-w-[1130px] mx-auto flex justify-between py-6 border-t border-b-gray-100 dark:border-t-gray-800">
       <div className="flex items-center">
         <h1 className="text-sm font-semibold pr-5 border-r border-r-gray-200 dark:border-r-gray-800 dark:text-white">
           <a href="/about">Eki Alfani</a>
@@ -13,7 +13,7 @@ function Footer() {
           Build. Improve. Repeat.
         </p>
       </div>
-      <div className="flex items-center gap-x-3 text-gray-600 dark:text-gray-400">
+      <div className="hidden md:flex items-center gap-x-3 text-gray-600 dark:text-gray-400">
         <a href="https://github.com/ekialfani" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </a>
@@ -24,7 +24,7 @@ function Footer() {
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="mailto:ekialfani15@gmail.com">
+        <a href="mailto:ekii.dev@gmail.com">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </div>

@@ -36,11 +36,7 @@ const techOptions = [
     label: "Android Studio",
     icon: "devicon-androidstudio-plain",
   },
-  {
-    value: "xcode",
-    label: "Xcode",
-    icon: "devicon-xcode-plain",
-  },
+  { value: "xcode", label: "Xcode", icon: "devicon-xcode-plain" },
   { value: "git", label: "Git", icon: "devicon-git-plain" },
   { value: "github", label: "GitHub", icon: "devicon-github-original" },
 ];
@@ -65,25 +61,46 @@ const MenuList = (props) => (
 
 const selectClassNames = {
   container: () =>
-    "relative w-[90px] font-sans border-l border-gray-200 dark:border-gray-700",
+    [
+      "relative w-full min-w-0 font-sans",
+      "border border-gray-300 dark:border-gray-700",
+      "rounded-md",
+      // Desktop
+      "md:w-[90px] md:rounded-none md:border-0 md:border-l",
+    ].join(" "),
 
-  valueContainer: () => "min-w-0 flex-nowrap overflow-hidden pl-3",
+  control: () => "flex h-[73px] items-center md:h-auto md:min-h-0",
+
+  valueContainer: () =>
+    [
+      "flex min-w-0 flex-1 flex-nowrap items-center justify-center",
+      "overflow-hidden pl-0",
+      "md:justify-start md:pl-3",
+    ].join(" "),
 
   placeholder: () =>
-    "m-0 whitespace-nowrap text-[13px] text-slate-700 dark:text-gray-400 font-medium",
+    [
+      "m-0 whitespace-nowrap text-xs",
+      "text-gray-700 dark:text-gray-400 font-medium text-center",
+      "md:text-[13px] md:text-left md:text-slate-700",
+    ].join(" "),
 
-  indicatorsContainer: () => "h-[35px]",
+  indicatorsContainer: () => "flex h-full shrink-0 items-center md:h-[35px]",
 
-  dropdownIndicator: () => "px-2 pl-1 text-slate-300 hover:text-white",
+  dropdownIndicator: () =>
+    "px-0 pl-1 md:px-2 md:pl-1 text-gray-500 md:text-slate-300 md:hover:text-white",
 
   indicatorSeparator: () => "hidden",
 
   menu: () =>
     [
-      "!left-auto !right-0 !mt-2 !w-[357px]",
+      "!left-auto !right-0 !mt-2",
+      "!w-[min(357px,calc(100vw-2rem))]",
       "overflow-hidden rounded-[14px]",
-      "border border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-800",
-      "shadow-xl shadow-black/25 dark:shadow-slate-500/25 z-50",
+      "border border-gray-200 dark:border-gray-600",
+      "bg-white dark:bg-slate-800",
+      "shadow-xl shadow-black/25 dark:shadow-slate-500/25",
+      "z-10",
     ].join(" "),
 
   menuList: () => "max-h-[260px] overflow-x-hidden overflow-y-auto p-2.5",
@@ -98,7 +115,7 @@ export default function TechStackDropdown() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative z-20">
+    <div className="relative z-20 w-full min-w-0 md:w-auto">
       <Select
         unstyled
         options={techOptions}
@@ -108,7 +125,7 @@ export default function TechStackDropdown() {
           MenuList,
           IndicatorSeparator: () => null,
           DropdownIndicator: () => (
-            <span className="flex items-center pr-2 text-gray-500 mt-1">
+            <span className="flex items-center pr-2 text-gray-500">
               {isOpen ? (
                 <FontAwesomeIcon icon={faCaretDown} />
               ) : (
